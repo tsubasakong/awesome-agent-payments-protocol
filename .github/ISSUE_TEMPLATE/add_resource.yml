@@ -1,0 +1,121 @@
+name: "📝 Add Resource"
+description: "Suggest a blog, article, video, repository, or specification related to AP2/A2A/x402"
+title: "[Add] "
+labels: ["add-resource", "good first issue"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to Awesome Agent Payments Protocol! 🚀
+        
+        Help us build the most comprehensive resource list for AP2, A2A, and x402.
+
+  - type: input
+    id: url
+    attributes:
+      label: "🔗 Resource URL"
+      description: "The link to the resource you want to add"
+      placeholder: "https://example.com/awesome-ap2-article"
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: "📰 Resource Title"
+      description: "The title of the article/video/repo/etc."
+      placeholder: "Google launches Agent Payments Protocol (AP2)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "📂 Category"
+      description: "Which section should this resource go in?"
+      options:
+        - "📚 Official Documentation"
+        - "📄 Specifications & Whitepapers"
+        - "🛠 Developer Tools & Starters"
+        - "🌐 Ecosystem & Partners"
+        - "📰 News & Analysis"
+        - "🎥 Videos & Tutorials"
+        - "💬 Community"
+        - "🤔 Not sure / Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "📋 Description"
+      description: "Brief description of what this resource contains and why it's valuable"
+      placeholder: "Official launch announcement covering AP2's support for cards, bank transfers, and stablecoins, plus partnerships with 60+ companies including Coinbase and MetaMask."
+      value: ""
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: resource_type
+    attributes:
+      label: "🏷 Resource Type"
+      description: "What type of resource is this? (Check all that apply)"
+      options:
+        - label: "Official documentation or announcement"
+        - label: "Technical specification or whitepaper"
+        - label: "Code repository or sample implementation"
+        - label: "Tutorial or implementation guide"
+        - label: "News article or media coverage"
+        - label: "Video or presentation"
+        - label: "Blog post or technical analysis"
+        - label: "Community discussion or forum"
+
+  - type: checkboxes
+    id: protocols
+    attributes:
+      label: "⚡ Related Protocols"
+      description: "Which protocols does this resource cover? (Check all that apply)"
+      options:
+        - label: "AP2 (Agent Payments Protocol)"
+        - label: "A2A (Agent-to-Agent Protocol)"
+        - label: "x402 (HTTP 402 Payment Protocol)"
+        - label: "MCP (Model Context Protocol)"
+        - label: "General agentic commerce"
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "💭 Additional Context"
+      description: "Any extra information that might be helpful for reviewers?"
+      placeholder: "This is from the official Google Cloud blog and announces major partnerships..."
+      value: ""
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: quality_check
+    attributes:
+      label: "✅ Quality Checklist"
+      description: "Please confirm the following:"
+      options:
+        - label: "I've checked that this resource isn't already listed"
+          required: true
+        - label: "The link works and loads properly"
+          required: true
+        - label: "The content is substantial and valuable (not just promotional)"
+          required: true
+        - label: "The resource is directly related to AP2/A2A/x402/agentic commerce"
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        **Next Steps:**
+        1. Maintainers will review your suggestion
+        2. If approved, we'll add it to the appropriate section
+        3. You'll be credited as a contributor! 🎉
+        
+        **Questions?** Check our [Contributing Guidelines](../CONTRIBUTING.md) or ask in the comments below.
