@@ -99,6 +99,9 @@ _Last updated: 2025-11-06_
 - [x402 Rust crates + Facilitator](https://github.com/x402-rs/x402-rs)
 - [Coinbase x402 Repository](https://github.com/coinbase/x402)
 
+#### Production x402 Services
+- [httpay.xyz](https://httpay.xyz) - 120+ x402-paywalled API endpoints (fortune cookies, crypto analysis, AI tools). $0.01–$1.00 USDC on Base. No signup required. [Source](https://github.com/Alfredz0x/alfreds-digital-bazaar)
+
 ### ACP Implementation
 - [ACP: Get Started (OpenAI)](https://developers.openai.com/commerce/guides/get-started/)
 - [ACP Spec (GitHub)](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol)
