@@ -85,7 +85,7 @@ _Last updated: 2025-11-06_
 
 ### AP2 Implementation
 - [AP2 Python & Android Samples](https://github.com/google-agentic-commerce/AP2)
-
+- [ScoutScore](https://scoutscore.ai) - Trust scoring infrastructure for x402 services. Behavioral trust scores across 1,700+ services using a 4-pillar model. [npm SDK](https://www.npmjs.com/package/@scoutscore/sdk) · [MCP Server](https://www.npmjs.com/package/@scoutscore/mcp-server) · [API Docs](https://scoutscore.ai/docs)
 ### x402 Implementation
 
 #### Quickstarts
