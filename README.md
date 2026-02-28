@@ -126,6 +126,9 @@ _Last updated: 2025-11-06_
 ### Agent Trust Rails
 **Visa's Trusted Agent Protocol** and **Mastercard's Agent Pay** both leverage **Web Bot Auth** for cryptographically signed agent identity during browse and payment flows.
 
+### Agent Reputation & Scoring
+- [DJD Agent Score](https://djd-agent-score.fly.dev) - Behavioral reputation scoring API for AI agent wallets on Base. Scores agents 0–100 across 5 dimensions using on-chain transaction patterns, sybil detection, and gaming velocity checks. x402-native monetization, MCP server distribution, and ERC-8004 compatible. [GitHub](https://github.com/jacobsd32-cpu/djd-agent-score)
+
 ### E-commerce Platforms
 - **Shopify** - AP2 & ACP support
 - **Etsy** - Live with ACP (Instant Checkout in ChatGPT)
