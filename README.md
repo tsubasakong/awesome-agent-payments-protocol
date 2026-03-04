@@ -95,6 +95,9 @@ _Last updated: 2025-11-06_
 - [QuickNode - Using x402 for Paywalls](https://www.quicknode.com/guides/infrastructure/how-to-use-x402-payment-required)
 - [Crossmint x402 Starter](https://github.com/Crossmint/crossmint-402-starter)
 
+#### Live x402 APIs
+- [Crypto Anomaly Signal API](https://frog03-20494.wykr.es/api/signals/paid) – Real-time crypto volume anomaly detection across 50+ tokens. $0.01 USDC per call via x402 on Base. Free tier available at `/api/signals/free`.
+
 #### SDKs & Libraries
 - [x402 Rust crates + Facilitator](https://github.com/x402-rs/x402-rs)
 - [Coinbase x402 Repository](https://github.com/coinbase/x402)
