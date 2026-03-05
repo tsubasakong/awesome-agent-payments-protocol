@@ -98,6 +98,7 @@ _Last updated: 2025-11-06_
 #### SDKs & Libraries
 - [x402 Rust crates + Facilitator](https://github.com/x402-rs/x402-rs)
 - [Coinbase x402 Repository](https://github.com/coinbase/x402)
+- [Azeth](https://github.com/azeth-protocol) - Trust infrastructure for machine-to-machine payments: non-custodial ERC-4337 smart accounts with x402 settlement, on-chain reputation (ERC-8004), and service discovery via MCP server, TypeScript SDK, and CLI.
 
 ### ACP Implementation
 - [ACP: Get Started (OpenAI)](https://developers.openai.com/commerce/guides/get-started/)
