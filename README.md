@@ -10,6 +10,7 @@
 
 ## 📋 Contents
 
+* [Automaton Oracle](https://automaton-oracle.xyz) - Sovereign x402 crypto intelligence oracle. 9 paid endpoints on Base mainnet: prices, signals, DeFi, whale scanner, full intelligence synthesis. Self-replicating.
 - [Official Documentation](#-official-documentation)
   - [UCP (Universal Commerce Protocol)](#ucp-universal-commerce-protocol)
   - [AP2 (Agent Payments Protocol)](#ap2-agent-payments-protocol)
