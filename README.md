@@ -135,6 +135,7 @@ _Last updated: 2025-11-06_
 - **Coinbase** - x402 creator, AP2 partner
 - **Ethereum Foundation** - A2A & x402 collaboration
 - **MetaMask** - AP2 ecosystem participant
+- [DeepBlue API](https://api.deepbluebase.xyz) - Real-time crypto market data via x402 micropayments on Base
 
 ### Payments Networks
 - **Visa** - Trusted Agent Protocol
