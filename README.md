@@ -136,6 +136,7 @@
 - [Web Bot Auth — Architecture Draft (IETF)](https://datatracker.ietf.org/doc/html/draft-meunier-web-bot-auth-architecture) — Agent identity via HTTP Message Signatures
 - [Web Bot Auth — Directory Draft (IETF)](https://datatracker.ietf.org/doc/html/draft-meunier-web-bot-auth-directory) — Directory for verified bot identities
 - [Web Bot Auth (Cloudflare Developer Docs)](https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/)
+- [ZKProofport](https://zkproofport.app) — Zero-knowledge proof generation for AI agent identity. Lets agents prove Coinbase KYC, Country, Google OIDC, Google Workspace, or Microsoft 365 affiliation via x402-paid TEE proving on Base. ERC-8004 registered, A2A compatible. NPM: `@zkproofport-ai/mcp`. Reference app: [OpenStoa](https://github.com/zkproofport/openstoa) (1st place — The Synthesis Hackathon 2026)
 
 ---
 
