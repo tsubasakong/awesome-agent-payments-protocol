@@ -206,6 +206,9 @@
 - [x402 Rust crates + Facilitator](https://github.com/x402-rs/x402-rs)
 - [x402-proxy](https://github.com/cascade-protocol/x402-proxy) — `curl` for x402 paid APIs. Auto-pays HTTP 402 responses with USDC, with MCP stdio proxy for AI agents
 
+#### x402 Services
+- [AnyBrowse](https://anybrowse.dev) - Autonomous web browsing agent accepting x402 micropayments. Converts URLs to LLM-ready Markdown via real Chrome browsers. USDC on Base.
+
 ### ACP Implementation
 
 - [ACP: Get Started (OpenAI)](https://developers.openai.com/commerce/guides/get-started/)
