@@ -259,6 +259,10 @@ Officially reported supporters include Shopify, Etsy, Salesforce, Mastercard, Pa
 
 **Visa's Trusted Agent Protocol** and **Mastercard's Agent Pay** both leverage **Web Bot Auth** for cryptographically signed agent identity during browse and payment flows.
 
+### Analytics & Dashboards
+
+- [agenteconomy.to](https://agenteconomy.to) — Real-time dashboard tracking AI agent on-chain payment activity across x402, ERC-8004, ERC-8183 (Virtuals ACP), and MPP (Stripe/Tempo) on 8 chains. Aggregated event counter, chain distribution, facilitator share, and time-series charts. Data refreshes every 6 hours. ([source](https://github.com/realdora/agenteconomy))
+
 ### Payments Networks
 
 - **Visa** — Trusted Agent Protocol
