@@ -278,6 +278,7 @@ Officially reported supporters include Shopify, Etsy, Salesforce, Mastercard, Pa
 
 - **Coinbase** — x402 creator, AP2 partner
 - **Tempo Labs** — MPP co-author (Paradigm-backed, payments-optimized L1)
+- **Radius Network** — x402-compatible stablecoin L1 for agentic micropayments
 
 ---
 
