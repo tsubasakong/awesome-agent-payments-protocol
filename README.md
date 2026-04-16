@@ -199,6 +199,7 @@
 #### Live Services
 
 - [PoolPulse](https://poolpulse.poolpulse.workers.dev) — x402-payable DeFi execution signals API on Base. CLMM slippage, MEV scoring, routing hints for 33 Uniswap V3 + Aerodrome pools. Built with Hono + x402/hono. Pay per call ($0.001–$0.25 USDC). ([OpenAPI](https://poolpulse.poolpulse.workers.dev/openapi.json), [Examples](https://github.com/HadiFrt20/poolpulse-agent-example))
+- [API Factory x402](https://github.com/Br0ski777/x402-agent-tools) - 100 x402-gated APIs for autonomous agents. Crypto, B2B, SEO, security. npm: x402-agent-tools (103 tools). Pay-per-call USDC on Base.
 
 #### SDKs & Libraries
 
