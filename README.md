@@ -199,12 +199,16 @@
 #### Live Services
 
 - [PoolPulse](https://poolpulse.poolpulse.workers.dev) — x402-payable DeFi execution signals API on Base. CLMM slippage, MEV scoring, routing hints for 33 Uniswap V3 + Aerodrome pools. Built with Hono + x402/hono. Pay per call ($0.001–$0.25 USDC). ([OpenAPI](https://poolpulse.poolpulse.workers.dev/openapi.json), [Examples](https://github.com/HadiFrt20/poolpulse-agent-example))
+- [CIPHER x402](https://cipher-x402.onrender.com) — 10 paid crypto-intelligence endpoints for autonomous agents. Solana MEV deep-dive (4 chapters), wallet/token scanner, HaveIBeenPwned breach lookup, Jito tip percentile math, GitHub repo-health audit, FRED macro series, Drift exposure risk. USDC on Base.
 
 #### SDKs & Libraries
 
 - [x402 Monorepo (GitHub)](https://github.com/coinbase/x402) — `@x402/core`, `@x402/evm`, `@x402/svm`, `@x402/axios`, `@x402/fetch`, `@x402/express`, `@x402/hono`, `@x402/next`, `@x402/paywall`
 - [x402 Rust crates + Facilitator](https://github.com/x402-rs/x402-rs)
 - [x402-proxy](https://github.com/cascade-protocol/x402-proxy) — `curl` for x402 paid APIs. Auto-pays HTTP 402 responses with USDC, with MCP stdio proxy for AI agents
+- [x402-python](https://github.com/cryptomotifs/x402-python) — first Python client for x402 v2 with Decimal-precise nanopayment conversion and EIP-712 signing
+- [cipher-x402-client](https://github.com/cryptomotifs/cipher-x402-client) — tiny TypeScript client for x402 v2, zero-config USDC-on-Base
+- [cipher-x402-mcp](https://github.com/cryptomotifs/cipher-x402-mcp) — MCP server exposing 8 CIPHER x402-gated crypto-intel tools to Claude/Cursor/VS Code
 
 ### ACP Implementation
 
