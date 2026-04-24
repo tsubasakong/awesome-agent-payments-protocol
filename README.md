@@ -184,6 +184,7 @@
 ### AP2 Implementation
 
 - [AP2 Python & Android Samples](https://github.com/google-agentic-commerce/AP2)
+- [AlgoVoi AP2 Facilitator](https://api1.ilovechicken.co.uk/.well-known/agent.json) — Live production AP2 facilitator with on-chain USDC settlement. Spans Algorand, VOI, Hedera, Stellar, Base, Solana, Tempo on a single endpoint. Solana flow uses Solana Pay `reference` pubkey binding for cryptographic tx↔PaymentMandate correlation. ([Source](https://github.com/chopmob-cloud/AlgoVoi-Platform-Adapters))
 
 ### x402 Implementation
 
@@ -195,6 +196,7 @@
 - [QuickNode — Using x402 for Paywalls](https://www.quicknode.com/guides/infrastructure/how-to-use-x402-payment-required)
 - [Crossmint x402 Starter](https://github.com/Crossmint/crossmint-402-starter)
 - [x402 Wallet for Claude Desktop](https://github.com/402md/x402-wallet-for-claude-desktop) — Claude Desktop extension with x402 USDC payments on Stellar and Base. Automatic 402 handling with configurable spending limits.
+- [AlgoVoi Multi-Chain x402 Facilitator](https://api1.ilovechicken.co.uk) — Single-endpoint x402 facilitator spanning EVM (Base, Tempo), SVM (Solana), AVM (Algorand, VOI), Stellar, and Hedera. Native Solana Pay `reference` pubkey binding. Agent card at `/.well-known/agent.json`. ([MCP adapter](https://github.com/chopmob-cloud/AlgoVoi-Platform-Adapters))
 
 #### Live Services
 
@@ -216,6 +218,7 @@
 
 - [MPP SDKs](https://mpp.dev/overview) — Official TypeScript SDK (`mppx`) with middleware for Hono, Express, Next.js, Elysia
 - [Stripe: Machine Payments with MPP](https://docs.stripe.com/payments/machine/mpp) — Implementation with PaymentIntents
+- [AlgoVoi MPP Service](https://api1.ilovechicken.co.uk) — Registered in the MPP service directory ([tempoxyz/mpp #556](https://github.com/tempoxyz/mpp/pull/556)) with full 7-chain on-chain USDC coverage. Non-custodial, tenant-scoped.
 
 ### A2A Implementation
 
