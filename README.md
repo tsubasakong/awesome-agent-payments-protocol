@@ -268,6 +268,10 @@ Officially reported supporters include Shopify, Etsy, Salesforce, Mastercard, Pa
 
 - [agenteconomy.to](https://agenteconomy.to) — Real-time dashboard tracking AI agent on-chain payment activity across x402, ERC-8004, ERC-8183 (Virtuals ACP), and MPP (Stripe/Tempo) on 8 chains. Aggregated event counter, chain distribution, facilitator share, and time-series charts. Data refreshes every 6 hours. ([source](https://github.com/realdora/agenteconomy))
 
+### Production Implementations
+
+- [Zuluworks AI — Sovereign Shaka PQC-Shield Factory](https://api.zuluworksai.com) — Autonomous A2A factory on Cloudflare Workers selling 5 post-quantum-hardened agent services via x402 USDC on Base L2. ML-KEM-768 PQC tunnels (NIST FIPS 203), agent trust scoring (KYA), browser rendering, semantic memory, and Llama 3.1 inference. All settlement routed through the Coinbase CDP facilitator. ([Agent Card](https://api.zuluworksai.com/.well-known/agent.json) | [x402 Bazaar Manifest](https://api.zuluworksai.com/.well-known/x402-bazaar.json) | [MCP](https://api.zuluworksai.com/.well-known/mcp.json))
+
 ### Payments Networks
 
 - **Visa** — Trusted Agent Protocol
