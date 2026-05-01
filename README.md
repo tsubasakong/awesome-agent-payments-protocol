@@ -205,6 +205,7 @@
 - [x402 Monorepo (GitHub)](https://github.com/coinbase/x402) — `@x402/core`, `@x402/evm`, `@x402/svm`, `@x402/axios`, `@x402/fetch`, `@x402/express`, `@x402/hono`, `@x402/next`, `@x402/paywall`
 - [x402 Rust crates + Facilitator](https://github.com/x402-rs/x402-rs)
 - [x402-proxy](https://github.com/cascade-protocol/x402-proxy) — `curl` for x402 paid APIs. Auto-pays HTTP 402 responses with USDC, with MCP stdio proxy for AI agents
+- [MoltPe](https://github.com/umangbuilds/moltpe-agent-payments) — Open-source reference implementation for AI agent payments. Tri-rail (x402, MPP, fiat) with 11 MCP tools, non-custodial wallets via Shamir key splitting, and programmable spending policies. Apache 2.0, 87 tests, zero runtime dependencies. ([Site](https://moltpe.com))
 
 ### ACP Implementation
 
@@ -216,6 +217,7 @@
 
 - [MPP SDKs](https://mpp.dev/overview) — Official TypeScript SDK (`mppx`) with middleware for Hono, Express, Next.js, Elysia
 - [Stripe: Machine Payments with MPP](https://docs.stripe.com/payments/machine/mpp) — Implementation with PaymentIntents
+- [MoltPe MPP support](https://github.com/umangbuilds/moltpe-agent-payments) — Reference implementation pairing MPP with non-custodial agent wallets. Session-based streaming payments alongside x402 and fiat in a single tri-rail provider abstraction.
 
 ### A2A Implementation
 
