@@ -199,6 +199,7 @@
 #### Live Services
 
 - [PoolPulse](https://poolpulse.poolpulse.workers.dev) — x402-payable DeFi execution signals API on Base. CLMM slippage, MEV scoring, routing hints for 33 Uniswap V3 + Aerodrome pools. Built with Hono + x402/hono. Pay per call ($0.001–$0.25 USDC). ([OpenAPI](https://poolpulse.poolpulse.workers.dev/openapi.json), [Examples](https://github.com/HadiFrt20/poolpulse-agent-example))
+- **[Voidly Pay](https://api.voidly.ai/v1/pay/x402)** — Live x402 facilitator on Base with Sourcify-verified USDC vault ([`0xb592...1c12`](https://basescan.org/address/0xb592512932a7b354969bb48039c2dc7ad6ad1c12)). 11 paid endpoints at [marketplace](https://api.voidly.ai/v1/pay/marketplace) including agent-fetch toolkit (country-pinned fetch via 37+ probes, PDF extract, HTML→markdown, URL metadata). SDKs: [`@voidly/pay`](https://www.npmjs.com/package/@voidly/pay) (npm), [`voidly-pay`](https://pypi.org/project/voidly-pay/) (PyPI), [`@voidly/pay-mcp`](https://www.npmjs.com/package/@voidly/pay-mcp). Free 10-credit faucet at [/pay/claim](https://voidly.ai/pay/claim). Proof of reserves: [/pay/proof](https://voidly.ai/pay/proof).
 
 #### SDKs & Libraries
 
