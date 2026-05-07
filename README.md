@@ -199,6 +199,7 @@
 #### Live Services
 
 - [PoolPulse](https://poolpulse.poolpulse.workers.dev) — x402-payable DeFi execution signals API on Base. CLMM slippage, MEV scoring, routing hints for 33 Uniswap V3 + Aerodrome pools. Built with Hono + x402/hono. Pay per call ($0.001–$0.25 USDC). ([OpenAPI](https://poolpulse.poolpulse.workers.dev/openapi.json), [Examples](https://github.com/HadiFrt20/poolpulse-agent-example))
+- [TensorFeed](https://tensorfeed.ai) — x402-payable real-time AI ecosystem data API on Base. Free tier covers AI news, model pricing, AI service status (2-min polling across 20 providers), MCP registry growth, GitHub/npm/PyPI trending, AI papers. 14+ premium endpoints (1-3 USDC each) for routing recommendations, history series, webhook watches, recession watch, and provider deep-dives. Ships [AFTA](https://github.com/RipperMercs/afta) bilateral fair-trade contract on every paid call. ([OpenAPI](https://tensorfeed.ai/openapi.yaml), [Docs](https://tensorfeed.ai/developers/agent-payments), [MCP server](https://github.com/RipperMercs/tensorfeed-mcp))
 
 #### SDKs & Libraries
 
