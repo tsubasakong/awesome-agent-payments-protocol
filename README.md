@@ -17,6 +17,7 @@
   - [x402 (Machine Payments over HTTP 402)](#x402-machine-payments-over-http-402)
   - [ACP (Agentic Commerce Protocol)](#acp-agentic-commerce-protocol)
   - [MPP (Machine Payments Protocol)](#mpp-machine-payments-protocol)
+  - [ERC-8183 (Agentic Commerce Escrow)](#erc-8183-agentic-commerce-escrow)
   - [Network Trust Rails for Agents](#network-trust-rails-for-agents)
   - [Identity / Interop](#identity--interop)
 - [Specifications & Whitepapers](#-specifications--whitepapers)
@@ -116,6 +117,14 @@
 
 > **MPP and x402:** MPP is backwards-compatible with x402. The core x402 exact-payment flows map directly onto MPP's `charge` intent, so MPP clients can consume existing x402 services without modification. MPP additionally supports `session` (streaming/pay-as-you-go) payments, recurring payments, and microtransactions across stablecoins, cards, and bank transfers.
 
+### ERC-8183 (Agentic Commerce Escrow)
+
+- [ERC-8183 Specification](https://eips.ethereum.org/EIPS/eip-8183) — Official EIP
+- [ERC-8183 Discussion](https://ethereum-magicians.org/t/erc-8183-agentic-commerce/27902) — Ethereum Magicians thread
+- [ERC-8004 Specification](https://eips.ethereum.org/EIPS/eip-8004) — Companion identity + reputation registries that ERC-8183 contracts can write feedback to on settlement
+
+> **ERC-8183 vs x402 / MPP:** Where x402 and MPP settle instantly per request (good for stateless metered access), ERC-8183 is the **on-chain escrow** standard for *service-delivery* between agents — cases where the deliverable can't be verified by HTTP 200 and a neutral Evaluator may need to adjudicate. Lifecycle: `createJob → approve → fund → submit → complete | reject`. Stablecoin-denominated, 3-way fee split (provider/evaluator/platform) enforced by the contract, refund-on-expiry, native composition with ERC-8004 reputation feedback on settlement.
+
 ### Network Trust Rails for Agents
 
 #### Visa Trusted Agent Protocol
@@ -161,6 +170,11 @@
 
 - [MPP Overview & Spec](https://mpp.dev/overview) — Protocol specification and payment flow documentation
 - [IETF Payment HTTP Authentication Scheme](https://mpp.dev/overview) — See spec link on mpp.dev
+
+### ERC-8183 / ERC-8004
+
+- [ERC-8183 — Agentic Commerce](https://eips.ethereum.org/EIPS/eip-8183) — On-chain escrow standard for agent-to-agent service delivery (lifecycle, fee splits, evaluator role, expiry refund)
+- [ERC-8004 — Trustless Agents](https://eips.ethereum.org/EIPS/eip-8004) — On-chain identity and reputation registries for autonomous agents (signed feedback, scoring rules hash, ERC-1271 contract signatures)
 
 ### Web Bot Auth / Agent Identity
 
@@ -221,6 +235,10 @@
 
 - [A2A Samples Repository](https://github.com/a2aproject/a2a-samples) — Hello-world, multi-agent, and framework-specific examples
 - [A2A Inspector](https://github.com/a2aproject/a2a-inspector) — Validate your A2A agent
+
+### ERC-8183 / ERC-8004 Implementation
+
+- [CardZero](https://cardzero.ai) — First known production deployment of ERC-8004 + ERC-8183 on Base mainnet. ERC-4337 smart-contract wallet for AI agents with owner-set spending rules, x402 buyer support, and full Job-escrow lifecycle live at `api.cardzero.ai/v1/jobs`. Source on [GitHub](https://github.com/mrocker/CardZero); MCP server published as [`cardzero-mcp`](https://www.npmjs.com/package/cardzero-mcp); 27-page docs + `/llms-full.txt` corpus at [cardzero.ai/docs](https://cardzero.ai/docs).
 
 ### Agent Frameworks
 
