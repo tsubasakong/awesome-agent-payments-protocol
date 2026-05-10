@@ -86,6 +86,7 @@
 - [x402 V2 Launch Post](https://www.x402.org/writing/x402-v2-launch)
 - [Cloudflare Agents SDK: x402](https://developers.cloudflare.com/agents/x402/) — Built-in x402 support in Cloudflare Workers
 - [Cloudflare Blog: x402 Foundation](https://blog.cloudflare.com/x402/) — x402 Foundation announcement with Coinbase
+- [x402agent.no](https://x402agent.no) — Live x402 production services: Norwegian Companies House (Brønnøysundregistrene) data lookups and backlink analysis (bhrefs). USDC micropayments on Base, no API keys. ([x402 Discovery](https://x402agent.no/.well-known/x402.json) | [llms.txt](https://x402agent.no/llms.txt))
 
 ### ACP (Agentic Commerce Protocol)
 
@@ -230,6 +231,7 @@
 - [x402 in Agents SDK](https://developers.cloudflare.com/agents/x402/) — Built-in x402 support
 - [MPP in Agents SDK](https://developers.cloudflare.com/agents/agentic-payments/mpp/) — Built-in MPP support
 - [Cloudflare Blog: x402 Foundation](https://blog.cloudflare.com/x402/)
+- [x402agent.no](https://x402agent.no) — Live x402 production services: Norwegian Companies House (Brønnøysundregistrene) data lookups and backlink analysis (bhrefs). USDC micropayments on Base, no API keys. ([x402 Discovery](https://x402agent.no/.well-known/x402.json) | [llms.txt](https://x402agent.no/llms.txt))
 
 #### MCP Integration
 
@@ -331,6 +333,7 @@ Officially reported supporters include Shopify, Etsy, Salesforce, Mastercard, Pa
 #### x402 Foundation (2025)
 
 - [Cloudflare Blog: x402 Foundation announcement](https://blog.cloudflare.com/x402/)
+- [x402agent.no](https://x402agent.no) — Live x402 production services: Norwegian Companies House (Brønnøysundregistrene) data lookups and backlink analysis (bhrefs). USDC micropayments on Base, no API keys. ([x402 Discovery](https://x402agent.no/.well-known/x402.json) | [llms.txt](https://x402agent.no/llms.txt))
 
 #### Network Trust Rails (2025)
 
