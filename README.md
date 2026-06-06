@@ -199,6 +199,7 @@
 #### Live Services
 
 - [PoolPulse](https://poolpulse.poolpulse.workers.dev) — x402-payable DeFi execution signals API on Base. CLMM slippage, MEV scoring, routing hints for 33 Uniswap V3 + Aerodrome pools. Built with Hono + x402/hono. Pay per call ($0.001–$0.25 USDC). ([OpenAPI](https://poolpulse.poolpulse.workers.dev/openapi.json), [Examples](https://github.com/HadiFrt20/poolpulse-agent-example))
+- [Intelica](https://intelica.onrender.com) — Competitive intelligence API for autonomous AI agents. Analyzes any URL or company description and returns structured JSON with market positioning, competitors, pain points, and executable Market Score (threat_level, moat_strength, agent_recommendation). 10 context modes: `competitive`, `fundraising`, `partnership`, `acquisition`, `market_entry`, `crypto_protocol`, `regulatory_compliance`, `venture_screening`, `risk_assessment`, `sales_enablement`. Standard $0.05 USDC, Elite $1.00 USDC per call on Base and Solana mainnet. MCP at `/mcp`, A2A at `/message/send`. ([OpenAPI](https://intelica.onrender.com/openapi.json), [x402 manifest](https://intelica.onrender.com/.well-known/x402.json))
 
 #### SDKs & Libraries
 
