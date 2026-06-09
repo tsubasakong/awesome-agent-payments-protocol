@@ -90,6 +90,7 @@
 - [x402 V2 Launch Post](https://www.x402.org/writing/x402-v2-launch)
 - [Cloudflare Agents SDK: x402](https://developers.cloudflare.com/agents/x402/) — Built-in x402 support in Cloudflare Workers
 - [Cloudflare Blog: x402 Foundation](https://blog.cloudflare.com/x402/) — x402 Foundation announcement with Coinbase
+- [gold-402](https://github.com/Haustorium12/gold-402) — Curated x402 directory by 24K Labs. 300+ handpicked entries across facilitators, SDKs, MCP servers, APIs, and tools, with editorial writeups and verified badges for production-confirmed services. Backed by a 29,000+ entry full catalog from CDP Bazaar and Agentic.market.
 
 ### ACP (Agentic Commerce Protocol)
 
