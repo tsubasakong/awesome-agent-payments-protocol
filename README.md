@@ -227,6 +227,7 @@
 
 - [PoolPulse](https://poolpulse.poolpulse.workers.dev) — x402-payable DeFi execution signals API on Base. CLMM slippage, MEV scoring, routing hints for 33 Uniswap V3 + Aerodrome pools. Built with Hono + x402/hono. Pay per call ($0.001–$0.25 USDC). ([OpenAPI](https://poolpulse.poolpulse.workers.dev/openapi.json), [Examples](https://github.com/HadiFrt20/poolpulse-agent-example))
 - [Coinbase x402 Bazaar](https://docs.cdp.coinbase.com/x402/bazaar) — Discovery layer / MCP server exposing 10,000+ x402-payable endpoints that agents can search, discover, and pay for autonomously (also surfaced via AWS Bedrock AgentCore Gateway)
+- [The STALL](https://the-stall.intuitek.ai) — 207-capability data intelligence MCP with x402 micropayments. Financial markets, crypto, DeFi, options flow, macro, and real-world intelligence — pay-per-call in USDC on Base, no subscription required. [[207 caps]](https://the-stall.intuitek.ai/health)
 
 #### SDKs & Libraries
 
