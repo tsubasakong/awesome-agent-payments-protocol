@@ -233,6 +233,7 @@
 - [x402 Monorepo (GitHub)](https://github.com/coinbase/x402) — `@x402/core`, `@x402/evm`, `@x402/svm`, `@x402/axios`, `@x402/fetch`, `@x402/express`, `@x402/hono`, `@x402/next`, `@x402/paywall`
 - [x402 Rust crates + Facilitator](https://github.com/x402-rs/x402-rs)
 - [x402-proxy](https://github.com/cascade-protocol/x402-proxy) — `curl` for x402 paid APIs. Auto-pays HTTP 402 responses with USDC, with MCP stdio proxy for AI agents
+- [switchboard (kcolbchain)](https://github.com/kcolbchain/switchboard) — Python middleware + on-chain escrow for agent-to-agent payments. Server-side `X402Middleware` (FastAPI/Flask), gas-budget tracker (per-hour/per-day caps), reorg-safe nonce manager, and Solidity `AgentEscrow` with timeout/refund. ZAP binary wire (~10× smaller than JSON) for high-volume A2A. Protocol-agnostic substrate (x402 + escrow shipping; MPP/AP2 in flight). MIT.
 
 ### ACP Implementation
 
