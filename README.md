@@ -276,6 +276,10 @@
 - [OpenAI Agents SDK — MCP](https://openai.github.io/openai-agents-python/mcp/)
 - [Stripe MCP Server](https://docs.stripe.com/) — Stripe's MCP tools for agentic commerce
 
+#### Suede Agent Studio
+
+- [Suede Agent Studio](https://agents.suedeai.ai) — Managed platform for building AI agent flows that monetize via x402. Each published flow becomes a pay-per-call endpoint settled in USDC on Base through a Coinbase CDP facilitator; build on a visual canvas or in code with the SDK and `suede` CLI. Free tier plus metered gateway and pay-per-call usage.
+
 ---
 
 ## 🌐 Ecosystem & Partners
