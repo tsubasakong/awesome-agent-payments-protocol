@@ -228,6 +228,8 @@
 - [PoolPulse](https://poolpulse.poolpulse.workers.dev) — x402-payable DeFi execution signals API on Base. CLMM slippage, MEV scoring, routing hints for 33 Uniswap V3 + Aerodrome pools. Built with Hono + x402/hono. Pay per call ($0.001–$0.25 USDC). ([OpenAPI](https://poolpulse.poolpulse.workers.dev/openapi.json), [Examples](https://github.com/HadiFrt20/poolpulse-agent-example))
 - [Coinbase x402 Bazaar](https://docs.cdp.coinbase.com/x402/bazaar) — Discovery layer / MCP server exposing 10,000+ x402-payable endpoints that agents can search, discover, and pay for autonomously (also surfaced via AWS Bedrock AgentCore Gateway)
 
+- [SolSigs](https://solsigs.com) — Live Solana data API for AI agents via x402 micropayments in USDC. 6 endpoints: DEX feeds, arbitrage scanning, wallet intelligence, launch detection, LLM summarizer, RPC balancing ($0.001–$0.010). Custom x402 middleware, self-hosted. ([Discover](https://solsigs.com/discover), [x402 JSON](https://solsigs.com/.well-known/x402.json))
+
 #### SDKs & Libraries
 
 - [x402 Monorepo (GitHub)](https://github.com/coinbase/x402) — `@x402/core`, `@x402/evm`, `@x402/svm`, `@x402/axios`, `@x402/fetch`, `@x402/express`, `@x402/hono`, `@x402/next`, `@x402/paywall`
