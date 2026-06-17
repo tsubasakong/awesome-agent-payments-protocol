@@ -349,6 +349,12 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 
 ---
 
+
+## 🔒 Privacy & Compliance Tools
+
+- [TrustBoost PII Sanitizer](https://github.com/teodorofodocrispin-cmyk/TrustBoost-PII-Sanitizer) — x402-native PII sanitization layer for agentic pipelines. Sanitizes text before it reaches LLMs or payment endpoints. Returns sanitized content + safety score + risk category. Proof of Sanitization on Solana via Helius. 8 languages including LATAM (RFC, CUIT, CPF). EU AI Act compliant. Try free: `tx_hash=TRIAL`.
+
+
 ## 📰 News & Analysis
 
 ### Major Launches & Milestones
