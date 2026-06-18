@@ -233,6 +233,7 @@
 - [x402 Monorepo (GitHub)](https://github.com/coinbase/x402) — `@x402/core`, `@x402/evm`, `@x402/svm`, `@x402/axios`, `@x402/fetch`, `@x402/express`, `@x402/hono`, `@x402/next`, `@x402/paywall`
 - [x402 Rust crates + Facilitator](https://github.com/x402-rs/x402-rs)
 - [x402-proxy](https://github.com/cascade-protocol/x402-proxy) — `curl` for x402 paid APIs. Auto-pays HTTP 402 responses with USDC, with MCP stdio proxy for AI agents
+- [@tensorfeed/x402-base-mcp](https://www.npmjs.com/package/@tensorfeed/x402-base-mcp) — Read-only Base mainnet chain reader purpose-built for x402 payment verification. Eleven MCP tools: verify on-chain that a USDC settlement matches a claimed x402 receipt, parse publisher `/.well-known/x402` manifests, list recent USDC payments to an address, check AFTA federation status. No private keys, no signing, no broadcasts. ([GitHub](https://github.com/RipperMercs/tensorfeed-x402-base-mcp), [MCP registry](https://registry.modelcontextprotocol.io/v0/servers/ai.tensorfeed/x402-base-mcp))
 
 ### ACP Implementation
 
