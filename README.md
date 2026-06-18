@@ -223,6 +223,20 @@
 - [Crossmint x402 Starter](https://github.com/Crossmint/crossmint-402-starter)
 - [x402 Wallet for Claude Desktop](https://github.com/402md/x402-wallet-for-claude-desktop) — Claude Desktop extension with x402 USDC payments on Stellar and Base. Automatic 402 handling with configurable spending limits.
 
+#### ScriptMasterLabs x402 Production Stack
+#### ScriptMasterLabs x402 Production Stack
+
+- [SqueezeOS MCP](https://squeezeos-api.onrender.com/mcp) — 33-tool institutional trading MCP server. XRPL/RLUSD + Base/USDC via x402. Short-squeeze detection, FTD analysis, Schwab/Polygon/Alpaca. Free tier + paid tiers $0.01–$1.00. ([GitHub](https://github.com/Timwal78/SqueezeOS))
+- [xDEO Earnings Oracle](https://xdeo.timothy-walton45.workers.dev) — Decentralized earnings oracle. $0.01/call vs Bloomberg $24k/yr. SEC EDGAR verified. AI thesis $0.75. MCP at /mcp. ([GitHub](https://github.com/Timwal78/SqueezeOS))
+- [SML x402 Signal API](https://github.com/Timwal78/sml-x402-signal-api) — Pay-per-call US equities signals. $0.01 bias+momentum, $0.05 regime, $0.25 squeeze engine. Base USDC, ed25519-signed, 30% affiliate.
+- [Ghost Layer](https://ghost-layer.onrender.com) — Dual-chain XRPL/Base toll gateway. URIToken on-chain licensing, Agent Passport tiers, 0.10% routing fee. MCP at /mcp. ([GitHub](https://github.com/Timwal78/ghost-layer))
+- [proof402-middleware / @relayos/mcp-paywall](https://www.npmjs.com/package/@relayos/mcp-paywall) — Drop-in x402 MCP paywall. XRPL/RLUSD + Base/USDC. Zero API keys. `npm install @relayos/mcp-paywall`. ([GitHub](https://github.com/Timwal78/proof402-middleware))
+- [Aetheris MCP Scraper](https://github.com/Timwal78/aetheris-mcp-render) — x402 web scraper MCP. USDC on Base per scrape. SSE transport, JSDOM sanitization. SDK: `npm install aetheris-mcp-client`.
+- [CRAWLTOLL](https://github.com/Timwal78/crawltoll) — x402 paywall for AI web crawlers. XRPL/RLUSD per-crawl. Turn AI scraping into revenue.
+- [ZeroQuery Protocol](https://github.com/Timwal78/zeroquery-protocol) — Proof-of-Intent open spec for AI agent identity. x402-compatible, no OAuth, no API keys.
+
+> Built by [@Timwal78](https://github.com/Timwal78) / ScriptMasterLabs — Service-Disabled Veteran (SDVOSB).
+
 #### Live Services
 
 - [PoolPulse](https://poolpulse.poolpulse.workers.dev) — x402-payable DeFi execution signals API on Base. CLMM slippage, MEV scoring, routing hints for 33 Uniswap V3 + Aerodrome pools. Built with Hono + x402/hono. Pay per call ($0.001–$0.25 USDC). ([OpenAPI](https://poolpulse.poolpulse.workers.dev/openapi.json), [Examples](https://github.com/HadiFrt20/poolpulse-agent-example))
