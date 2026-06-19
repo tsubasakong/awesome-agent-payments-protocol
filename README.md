@@ -233,6 +233,7 @@
 - [x402 Monorepo (GitHub)](https://github.com/coinbase/x402) — `@x402/core`, `@x402/evm`, `@x402/svm`, `@x402/axios`, `@x402/fetch`, `@x402/express`, `@x402/hono`, `@x402/next`, `@x402/paywall`
 - [x402 Rust crates + Facilitator](https://github.com/x402-rs/x402-rs)
 - [x402-proxy](https://github.com/cascade-protocol/x402-proxy) — `curl` for x402 paid APIs. Auto-pays HTTP 402 responses with USDC, with MCP stdio proxy for AI agents
+- [PipRail](https://github.com/piprail/piprail) — Backendless multi-chain x402 SDK + MCP server. Verifies payments against your own RPC (no facilitator, no fee, self-custody) across 29 chains / 10 families — EVM, Solana, TON, Tron, NEAR, Sui, Aptos, Algorand, Stellar, XRPL. Seven MCP tools (discover, quote, plan, pay, register, budget, guide) with spend caps the model can't exceed. `npm i @piprail/sdk` · `npx -y @piprail/mcp`. MIT.
 
 ### ACP Implementation
 
