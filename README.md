@@ -512,3 +512,7 @@ This list is released under [CC0 1.0](LICENSE) (Public Domain). No rights reserv
 ---
 
 **Keywords:** `ucp` `ap2` `agent-payments` `agentic-commerce` `a2a` `x402` `acp` `mpp` `machine-payments-protocol` `amp` `agentic-mobile-protocol` `trusted-agent-protocol` `agent-pay` `gemini-spark` `web-bot-auth` `mcp` `stablecoins` `verifiable-credentials` `agentcore` `erc-8183` `erc-8004` `google-cloud` `coinbase` `stripe` `openai` `aws` `tempo`
+
+
+## MetaVision
+- [MetaVision AI Platform](https://metavision.click) - Web3 CVE Oracle (355k+ NVD vulnerabilities, $0.50 USDC), DeFi arbitrage signals on Base ($0.10 USDC), wallet fraud + rug pull detection. 18 MCP tools. x402 v2. ([Agent Card](https://metavision.click/.well-known/agent.json))
