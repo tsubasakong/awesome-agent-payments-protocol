@@ -227,6 +227,7 @@
 
 - [PoolPulse](https://poolpulse.poolpulse.workers.dev) — x402-payable DeFi execution signals API on Base. CLMM slippage, MEV scoring, routing hints for 33 Uniswap V3 + Aerodrome pools. Built with Hono + x402/hono. Pay per call ($0.001–$0.25 USDC). ([OpenAPI](https://poolpulse.poolpulse.workers.dev/openapi.json), [Examples](https://github.com/HadiFrt20/poolpulse-agent-example))
 - [Coinbase x402 Bazaar](https://docs.cdp.coinbase.com/x402/bazaar) — Discovery layer / MCP server exposing 10,000+ x402-payable endpoints that agents can search, discover, and pay for autonomously (also surfaced via AWS Bedrock AgentCore Gateway)
+- [Suede Labs AI](https://suedeai.ai) — x402-payable creative-rights media API on Base mainnet (`eip155:8453`, USDC). Agent-callable music/video generation, audio analysis, and on-chain rights/registry lookup, each returning HTTP 402 with x402 payment requirements; also fulfills paid jobs as a Virtuals ACP execution agent. Pay per call ($0.003–$1.50 USDC). ([x402 discovery](https://app.suedeai.ai/.well-known/x402.json), [endpoint reference](https://github.com/Suede-AI/suede-x402-acp))
 
 #### SDKs & Libraries
 
