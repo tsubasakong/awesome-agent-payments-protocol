@@ -226,6 +226,7 @@
 #### Live Services
 
 - [PoolPulse](https://poolpulse.poolpulse.workers.dev) — x402-payable DeFi execution signals API on Base. CLMM slippage, MEV scoring, routing hints for 33 Uniswap V3 + Aerodrome pools. Built with Hono + x402/hono. Pay per call ($0.001–$0.25 USDC). ([OpenAPI](https://poolpulse.poolpulse.workers.dev/openapi.json), [Examples](https://github.com/HadiFrt20/poolpulse-agent-example))
+- [Intelica](https://api.intelica.dev) — Competitive intelligence API for autonomous AI agents. Analyzes any URL or company description and returns structured JSON with moat scoring (IMI 0.0–1.0), competitor mapping, decision recommendation (enter/avoid/monitor/acquire/partner), executable action plan, source verification, and OTel trace metadata. 10 modes: `competitive`, `fundraising`, `partnership`, `acquisition`, `market_entry`, `crypto_protocol`, `defend_position`, `regulatory_compliance`, `venture_screening`, `risk_assessment`. Standard $0.05 USDC / Elite $1.00 USDC on Base (`eip155:8453`) and Solana. MCP at `/mcp`. ([OpenAPI](https://api.intelica.dev/openapi.json), [x402](https://api.intelica.dev/.well-known/x402.json), [Trial](https://api.intelica.dev/api-keys/trial))
 - [Coinbase x402 Bazaar](https://docs.cdp.coinbase.com/x402/bazaar) — Discovery layer / MCP server exposing 10,000+ x402-payable endpoints that agents can search, discover, and pay for autonomously (also surfaced via AWS Bedrock AgentCore Gateway)
 
 #### SDKs & Libraries
