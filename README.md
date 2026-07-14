@@ -227,6 +227,7 @@
 
 - [PoolPulse](https://poolpulse.poolpulse.workers.dev) — x402-payable DeFi execution signals API on Base. CLMM slippage, MEV scoring, routing hints for 33 Uniswap V3 + Aerodrome pools. Built with Hono + x402/hono. Pay per call ($0.001–$0.25 USDC). ([OpenAPI](https://poolpulse.poolpulse.workers.dev/openapi.json), [Examples](https://github.com/HadiFrt20/poolpulse-agent-example))
 - [Coinbase x402 Bazaar](https://docs.cdp.coinbase.com/x402/bazaar) — Discovery layer / MCP server exposing 10,000+ x402-payable endpoints that agents can search, discover, and pay for autonomously (also surfaced via AWS Bedrock AgentCore Gateway)
+- [AgentServices](https://agentservices.to) — 37 MCP tools for crypto market data, DeFi yields, on-chain analytics, traditional finance (stocks, FX, SEC filings), market intelligence, and AI inference. 41 of 53 endpoints are x402-paid at $0.001-$0.01/call (USDC on Base). MCP v5.3.0, protocol 2026-07-28. x402 v2 compliant.
 
 #### SDKs & Libraries
 
@@ -291,6 +292,7 @@ Officially reported supporters include Shopify, Etsy, Salesforce, Mastercard, Pa
 ### x402 Foundation
 
 **Cloudflare + Coinbase** coordinating adoption of x402. The Agents SDK and MCP servers support x402 out of the box. x402 v2 adds modular payment scheme support for EVM and Solana networks. As of mid-2026, **AWS Bedrock AgentCore** also wraps x402 as a managed payment surface (built with Coinbase and Stripe), and the **Coinbase x402 Bazaar** exposes 10,000+ payable endpoints. Per Chainalysis, x402 surpassed **100M+ agentic transactions on Base** within ~9 months of launch.
+- [AgentServices](https://agentservices.to) — 37 MCP tools for crypto market data, DeFi yields, on-chain analytics, traditional finance (stocks, FX, SEC filings), market intelligence, and AI inference. 41 of 53 endpoints are x402-paid at $0.001-$0.01/call (USDC on Base). MCP v5.3.0, protocol 2026-07-28. x402 v2 compliant.
 
 ### ACP
 
