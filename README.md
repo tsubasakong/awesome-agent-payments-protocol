@@ -311,6 +311,7 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 ### Agent Reputation & Scoring
 
 - [DJD Agent Score](https://djd-agent-score.fly.dev) — Behavioral reputation scoring API for AI agent wallets on Base. Scores agents 0–100 across 5 dimensions using on-chain transaction patterns, sybil detection, and gaming velocity checks. x402-native monetization, MCP server distribution, and ERC-8004 compatible. ([GitHub](https://github.com/jacobsd32-cpu/djd-agent-score))
+- [AsterPay KYA](https://asterpay.io/kya/) — Know Your Agent trust scoring for ERC-8004 agents: deterministic 0–100 score from on-chain wallet analysis, sanctions screening, identity verification, and operator KYB. Live assessments for Base agents published as trust triples on the [Intuition knowledge graph](https://portal.intuition.systems/explore/atom/0x6d7cd747553fc564c5aa716f6c983b0540461b0839fa6e5fca0608244f22743d?tab=overview); paid API via x402 or MPP. ([GitHub](https://github.com/aelira-labs))
 
 ### Analytics & Dashboards
 
