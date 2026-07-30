@@ -78,6 +78,7 @@
 | .NET | [a2aproject/a2a-dotnet](https://github.com/a2aproject/a2a-dotnet) | Preview ([Microsoft Foundry blog](https://devblogs.microsoft.com/foundry/building-ai-agents-a2a-dotnet-sdk/)) |
 
 ### x402 (Machine Payments over HTTP 402)
+- [PnL Labs](https://pnllabs.com) - Trust & risk verdicts for AI trading agents on Solana via x402 (USDC, no keys): real realized-PnL wallet trust (not peak scores), wallet funding forensics, token safety, and trade execution cost. Machine-first JSON + MCP server. ([API](https://api.pnllabs.com)) ([MCP](https://github.com/PnLlabs/pnllabs-mcp))
 
 - [x402.org](https://www.x402.org/) — Protocol homepage
 - [x402 Developer Docs](https://docs.x402.org/) — Core concepts, quickstarts, guides (docs.x402.org / Mintlify)
