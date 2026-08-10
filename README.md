@@ -288,6 +288,7 @@
 - [Coinbase x402 Bazaar](https://docs.cdp.coinbase.com/x402/bazaar) — Discovery layer / MCP server exposing 10,000+ x402-payable endpoints that agents can search, discover, and pay for autonomously (also surfaced via AWS Bedrock AgentCore Gateway)
 - [Coinbase for Agents](https://www.coinbase.com/blog/coinbase-for-agents) — MCP server connecting external agents (ChatGPT, Claude) to a Coinbase account; uses **x402** to pay for premium research APIs and on-demand compute with no login/subscription. Agents run in a ring-fenced sub-portfolio with user-defined capital/asset limits. Launched Jun 11, 2026. ([TechCrunch](https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/))
 - [Ripple XRPL AI Starter Kit](https://ripple.com/insights/xrpl-ai-starter-kit/) — Developer kit for agentic payments on the XRP Ledger via **x402**, settling in XRP and **RLUSD**. First-phase release ships an XRPL Docs MCP server, two Claude skills (wallet + payment ops), and x402 integration; 3–5s settlement with fixed fees. Named a settlement partner in Mastercard AP4M. Launched Jun 10, 2026. ([PYMNTS](https://www.pymnts.com/blockchain/2026/ripple-targets-agentic-payments-market-with-xrpl-starter-kit/))
+- [NitroTranslate](https://nitrotranslate.com) — MPP/402-payable human translation API. AI agents order professional human translation or verify machine-translation quality, no account, no API key. Pay per request. ([Docs (https://docs.nitrotranslate.com), [OpenAPI](https://nitrotranslate.com/openapi.yaml))
 
 #### SDKs & Libraries
 
