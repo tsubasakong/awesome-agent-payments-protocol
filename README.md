@@ -294,6 +294,7 @@
 - [x402 Monorepo (GitHub)](https://github.com/coinbase/x402) — `@x402/core`, `@x402/evm`, `@x402/svm`, `@x402/axios`, `@x402/fetch`, `@x402/express`, `@x402/hono`, `@x402/next`, `@x402/paywall`
 - [x402 Rust crates + Facilitator](https://github.com/x402-rs/x402-rs)
 - [x402-proxy](https://github.com/cascade-protocol/x402-proxy) — `curl` for x402 paid APIs. Auto-pays HTTP 402 responses with USDC, with MCP stdio proxy for AI agents
+- [stipend](https://github.com/stipend-sh/stipend) — Non-custodial USDC wallet on Base for AI agents, with buyer-side x402 auto-pay signed as EIP-3009 `transferWithAuthorization` so the agent never needs gas. Per-transaction, per-day and per-counterparty caps plus a destination allowlist are enforced in code between the decision and the signature, and apply to an x402 auto-payment identically. Local stdio MCP server, 7 tools. Python, Apache-2.0, not audited.
 
 ### ACP Implementation
 
