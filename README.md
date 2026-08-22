@@ -315,6 +315,7 @@
 ### ERC-8183 / ERC-8004 Implementation
 
 - [CardZero](https://cardzero.ai) — First known production deployment of ERC-8004 + ERC-8183 on Base mainnet. ERC-4337 smart-contract wallet for AI agents with owner-set spending rules, x402 buyer support, and full Job-escrow lifecycle live at `api.cardzero.ai/v1/jobs`. Source on [GitHub](https://github.com/mrocker/CardZero); MCP server published as [`cardzero-mcp`](https://www.npmjs.com/package/cardzero-mcp); 27-page docs + `/llms-full.txt` corpus at [cardzero.ai/docs](https://cardzero.ai/docs).
+- [Firmata Protocol](https://firmata.ai) - On-chain Know Your Agent (KYA) trust layer composing ERC-8004 (identity and reputation), ERC-8183 (commerce and conditional escrow), and x402 (HTTP settlement). An x402 payment is bound to an ERC-8183 Job that moves from Open to Funded to Submitted to a terminal state, releasing funds on completion or refunding on expiry, with the outcome written back to the counterparty's ERC-8004 reputation. On Arc (Circle's L1) and Base. Built by Meridian Finance; ecosystem index and KYA glossary at [meridian-ecosystem](https://github.com/MeridianFinance/meridian-ecosystem), live agent feed at [arcagent.live](https://arcagent.live). Testnet, audited before mainnet.
 
 ### Agent Frameworks & Managed Platforms
 
