@@ -4,7 +4,7 @@
 
 **PRs welcome!** Found something amazing? [Open a PR](../../pulls) or [suggest a resource](../../issues/new?template=add_resource.yml) 🎯
 
-*Last updated: 2026-08-05*
+*Last updated: 2026-08-26*
 
 ---
 
@@ -174,6 +174,7 @@
 - [Initial Announcement (Apr 2025)](https://www.mastercard.com/us/en/news-and-trends/press/2025/april/mastercard-unveils-agent-pay-pioneering-agentic-payments-technology-to-power-commerce-in-the-age-of-ai.html)
 - [Agent Pay international expansion, incl. Hong Kong (2026)](https://www.americanbanker.com/payments/news/visa-mastercard-expand-agentic-ai-deployments) — Part of Mastercard's push toward an international agentic-commerce network
 - [Agent Pay for Machines (AP4M) — launch (Jun 10, 2026)](https://www.mastercard.com/us/en/news-and-trends/press/2026/june/mastercard-launches-agent-pay-for-machines.html) — Network for high-frequency, low-value agent-to-agent ("machine") payments. Four sequential functions — credentialing, permissioning, transacting (across Mastercard card + account rails), and settling in fiat or stablecoin. Agent permissions/credentials are recorded on **public blockchains** (initially Polygon, Solana, Base) rather than a private database, and AP4M uses Mastercard's **Verifiable Intent** framework. 30+ launch partners incl. Adyen, Ant International, BVNK, Checkout.com, Cloudflare, Coinbase, Stripe, Tempo, OKX, RippleX, Aave Labs. Interoperates with x402/MPP. ([Fortune](https://fortune.com/2026/06/10/mastercard-ai-payments-protocol-launch-agentic-finance/), [CoinDesk](https://www.coindesk.com/business/2026/06/10/mastercard-prepares-for-a-future-where-ai-agents-make-payments-with-latest-introduction))
+- [Proto — agentic AI sandbox, live in UK (Aug 2026)](https://www.finextra.com/newsarticle/48097/mastercard-picks-uk-as-test-environment-for-agentic-ai-sandbox) — Mastercard's sandbox for retailers and FIs to test agent discoverability, trusted payment flows, and dispute handling before launch; announced Jul 16, live in the UK in August, with three new enterprise agents (shopping, onboarding, disputes) ([Payment Expert](https://paymentexpert.com/2026/07/16/mastercard-ai-sandbox-uk-payments/))
 
 ### Identity / Interop
 
@@ -288,6 +289,7 @@
 - [Coinbase x402 Bazaar](https://docs.cdp.coinbase.com/x402/bazaar) — Discovery layer / MCP server exposing 10,000+ x402-payable endpoints that agents can search, discover, and pay for autonomously (also surfaced via AWS Bedrock AgentCore Gateway)
 - [Coinbase for Agents](https://www.coinbase.com/blog/coinbase-for-agents) — MCP server connecting external agents (ChatGPT, Claude) to a Coinbase account; uses **x402** to pay for premium research APIs and on-demand compute with no login/subscription. Agents run in a ring-fenced sub-portfolio with user-defined capital/asset limits. Launched Jun 11, 2026. ([TechCrunch](https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/))
 - [Ripple XRPL AI Starter Kit](https://ripple.com/insights/xrpl-ai-starter-kit/) — Developer kit for agentic payments on the XRP Ledger via **x402**, settling in XRP and **RLUSD**. First-phase release ships an XRPL Docs MCP server, two Claude skills (wallet + payment ops), and x402 integration; 3–5s settlement with fixed fees. Named a settlement partner in Mastercard AP4M. Launched Jun 10, 2026. ([PYMNTS](https://www.pymnts.com/blockchain/2026/ripple-targets-agentic-payments-market-with-xrpl-starter-kit/))
+- [Glassnode agentic data access](https://research.glassnode.com/agentic-payments-glassnode-data-for-your-ai-agent/) — Pay-per-call access to on-chain metrics via **x402** in USDC — no API keys, subscriptions, or signup; MCP-capable agents discover an endpoint's price, pay, and retrieve data autonomously (Aug 2026)
 
 #### SDKs & Libraries
 
@@ -303,9 +305,12 @@
 
 ### MPP Implementation
 
-- [MPP SDKs](https://mpp.dev/overview) — Official TypeScript SDK (`mppx`) with middleware for Hono, Express, Next.js, Elysia
+- [MPP SDKs](https://mpp.dev/overview) — Official TypeScript SDK (`mppx`) with middleware for Hono, Express, Next.js, Elysia; Go, Ruby, Rust, and Python SDKs also published
 - [Stripe: Machine Payments with MPP](https://docs.stripe.com/payments/machine/mpp) — Implementation with PaymentIntents
 - [Visa Card Spec & SDK for MPP](https://corporate.visa.com/en/sites/visa-perspectives/innovation/visa-card-specification-sdk-for-machine-payments-protocol.html) — Card-based MPP transactions via tokenized network payment tokens settling over existing card infrastructure
+- [MPP relays (Aug 3, 2026)](https://mpp.dev/blog/relays) — Delegate MPP payment validation and settlement without changing the application's payment flow
+- [mppx identity support (Aug 12, 2026)](https://mpp.dev/blog/mppx-identity-support) — Verify agent identity across HTTP requests and payment retries
+- [mppx for agent SDKs and harnesses (Jul 27, 2026)](https://mpp.dev/blog/mppx-agent-runtimes) — Hooks connecting agent runtimes to paid tools and HTTP services through MPP; mpp.dev now lists **Amazon, Alchemy, Browserbase, Cloudflare, Dune, Parallel, and Visa** as integrations
 
 ### A2A Implementation
 
@@ -320,8 +325,9 @@
 
 #### Amazon Bedrock AgentCore Payments
 
-- [AWS What's New: AgentCore Payments (preview)](https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-bedrock-agentcore-payments-preview/) — Managed surface for agents to pay for APIs, MCP servers, web content, and other agents
-- [AWS ML Blog: Agents that transact (built with Coinbase and Stripe)](https://aws.amazon.com/blogs/machine-learning/agents-that-transact-introducing-amazon-bedrock-agentcore-payments-built-with-coinbase-and-stripe/) — Wraps x402 negotiation, wallet auth, stablecoin settlement, and proof delivery; deterministic session spending limits at the infra layer
+- [AWS What's New: AgentCore Payments — generally available (Aug 18, 2026)](https://aws.amazon.com/about-aws/whats-new/2026/08/bedrock-agentcore-payments-ga/) — Managed surface for agents to pay for APIs, MCP servers, web content, and other agents; **GA** adds **MPP support** and the **x402 "upto"** spending-ceiling scheme
+- [AWS ML Blog: AgentCore payments GA deep dive](https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale/) — Coinbase and Stripe Privy wallet integrations, protocol orchestration across x402 and MPP, configurable infrastructure-level payment limits, transaction observability
+- [AWS ML Blog: Agents that transact (preview announcement, built with Coinbase and Stripe)](https://aws.amazon.com/blogs/machine-learning/agents-that-transact-introducing-amazon-bedrock-agentcore-payments-built-with-coinbase-and-stripe/) — Wraps x402 negotiation, wallet auth, stablecoin settlement, and proof delivery; deterministic session spending limits at the infra layer
 - [Coinbase Blog: AgentCore Payments powered by x402](https://www.coinbase.com/blog/introducing-amazon-bedrock-agentcore-payments-powered-by-x402-and-coinbase)
 - [Sample: AgentCore + CloudFront + x402](https://github.com/aws-samples/sample-agentcore-cloudfront-x402-payments) — Reference demo using Bedrock AgentCore, Strands SDK, and CloudFront
 
@@ -335,6 +341,14 @@
 #### Cloudflare Monetization Gateway
 
 - [Cloudflare Blog: Announcing the Monetization Gateway](https://blog.cloudflare.com/monetization-gateway/) — **Sell-side** x402 product (announced Jul 1, 2026; **waitlist only**) letting Cloudflare customers charge any caller for any protected resource — web pages, datasets, APIs, or **MCP tools** — with **stablecoin settlement over x402** enforced at the edge (330+ cities). Sellers write payment rules as WAF-style expressions (per-verb pricing, variable pricing, intercept origin `401`→`402`), managed via dashboard, API, or Terraform; buyers need no signup/API key (optional **Web Bot Auth** agent identity). Settles in USDC (Base) and Open USD — sub-second, sub-cent, no chargebacks. Generalizes Cloudflare's earlier [Pay Per Crawl](https://blog.cloudflare.com/introducing-pay-per-crawl/) (charging AI crawlers) to any caller/resource. ([InfoQ](https://www.infoq.com/news/2026/07/cloudflare-aws-x402-micropayment/), [crypto.news](https://crypto.news/cloudflare-opens-waitlist-for-x402-stablecoin-monetization-gateway/))
+
+#### Cloudflare Agent Wallets & Agents Week (Aug 2026)
+
+- [Cloudflare: programmable wallets for AI agents](https://blog.cloudflare.com/wallets/) — Provision stablecoin-backed wallets per account and virtual wallets per agent, with spending allowances, transaction limits, and merchant restrictions; x402-compatible payments paired with delegated identity
+- [WebMCP developer preview](https://blog.cloudflare.com/webmcp/) — Expose structured browser-agent actions from ordinary websites without a separate API
+- [Agent Readiness & Answer Engine Optimization](https://blog.cloudflare.com/aeo/) — Measure whether agents can discover/interpret a site and how often AI assistants recommend it
+- [WriteGuard (private beta)](https://blog.cloudflare.com/mcp-portal-writeguard-private-beta/) — Least-privilege authorization for MCP write operations (purchase, refund, account changes)
+- [The Agent Access Model](https://blog.cloudflare.com/the-agent-access-model/) — Task-scoped delegated authority: identity brokering + continuous mediation + stateful trust
 
 #### Adyen Agentic
 
@@ -390,7 +404,7 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 
 ### Agent Trust Rails
 
-**Visa's Trusted Agent Protocol** and **Mastercard's Agent Pay** both leverage **Web Bot Auth** for cryptographically signed agent identity during browse and payment flows. In 2026 both expanded internationally — Visa's Agentic Ready program to Latin America and Asia (reaching the first live agentic transactions with European merchants in July 2026), and Mastercard's Agent Pay to markets including Hong Kong. In June 2026 Mastercard also launched **Agent Pay for Machines (AP4M)**, a dedicated network for high-frequency agent-to-agent payments with on-chain agent credentialing (Polygon/Solana/Base) and Verifiable Intent.
+**Visa's Trusted Agent Protocol** and **Mastercard's Agent Pay** both leverage **Web Bot Auth** for cryptographically signed agent identity during browse and payment flows. In 2026 both expanded internationally — Visa's Agentic Ready program to Latin America and Asia (reaching the first live agentic transactions with European merchants in July 2026), and Mastercard's Agent Pay to markets including Hong Kong. In June 2026 Mastercard also launched **Agent Pay for Machines (AP4M)**, a dedicated network for high-frequency agent-to-agent payments with on-chain agent credentialing (Polygon/Solana/Base) and Verifiable Intent. In August 2026, Mastercard's **Proto** agentic AI sandbox went live in the UK as its first test market, and both networks joined Rain's **Agentic Payments Alliance** (26 founding members incl. Visa, Mastercard, Circle, Fiserv, Fireblocks) working on shared agent identity, authorization, and fraud standards.
 
 ### Agent Reputation & Scoring
 
@@ -409,8 +423,8 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 - **Adyen** — AP2 integration, UCP endorser; launched **Adyen Agentic** (Jun 2026), a three-layer, protocol-agnostic suite (Agentic Feed, Agentic Cart, Agentic Payments) for selling through AI agents
 - **Worldpay** — AP2 support
 - **Nuvei** — **Nuvei Agentic** (Jul 2026): merchant-led, protocol-agnostic execution layer (Protocol Compatibility Layer across ACP/AP2/MCP + Know Your Agent registry); completed a first-party in-agent payment on live Visa rails; general availability targeted H2 2026
-- **Stripe** — ACP co-creator, MPP co-author, UCP endorser
-- **AWS** — Bedrock AgentCore Payments (preview), managed x402 + Stripe surface built with Coinbase and Stripe
+- **Stripe** — ACP co-creator, MPP co-author, UCP endorser; agreed to acquire **OpenRouter** ($7B+, Aug 2026) to extend into the model-consumption/token-metering layer
+- **AWS** — Bedrock AgentCore Payments (**GA Aug 2026**), managed x402 + MPP + Stripe surface built with Coinbase and Stripe
 
 ### Stablecoin & Settlement Infrastructure
 
@@ -418,6 +432,7 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 - **AllUnity (SEKAU)** — Launched the first fully reserved, MiCA-compliant Swedish krona-backed stablecoin, SEKAU, on Jun 19, 2026, live on Ethereum, Solana, Base, Tempo, and Polygon (Banking Circle as reserve/transaction bank); settles AI-initiated transactions into local bank accounts, extending AllUnity's x402-powered agentic settlement layer ([AllUnity](https://allunity.com/news/allunity-launches-the-first-fully-reserved-swedish-krona-backed-stablecoin-sekau), [CoinDesk](https://www.coindesk.com/business/2026/05/20/germany-s-allunity-plans-swedish-krona-stablecoin-pushes-into-ai-agentic-payments))
 - **Fireblocks** — Agentic Payments Suite for stablecoin transactions ([The Paypers](https://thepaypers.com/payments/news/fireblocks-launches-agentic-payments-suite-for-stablecoin-transactions))
 - **Circle + Nium** — Partnership to strengthen stablecoin rails for agentic AI payments ([American Banker](https://www.americanbanker.com/payments/news/circle-and-nium-partner-to-boost-stablecoins-ai))
+- **Natural** — Secured a credit facility of up to **$100M from Upper90** (Aug 2026), atop $40M equity, specifically to scale payments for AI agents — first dedicated credit capacity underwriting agent-payment float (funds often advanced before downstream settlement) ([Natural](https://www.natural.com/blog/100m-credit-facility))
 - **Ripple (RLUSD)** — XRPL AI Starter Kit (Jun 2026) lets agents settle in RLUSD (Ripple's NYDFS-approved USD stablecoin) and XRP over x402 ([Ripple](https://ripple.com/insights/xrpl-ai-starter-kit/))
 
 ### AI / Agent Platforms
@@ -426,7 +441,7 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 - **OpenAI** — ACP co-creator (with Stripe)
 - **Anthropic** — MPP design partner
 - **Shopify** — UCP co-developer, AP2 & ACP partner
-- **AWS** — Bedrock AgentCore Payments (x402 + Stripe), with the x402 Bazaar MCP server via AgentCore Gateway
+- **AWS** — Bedrock AgentCore Payments (x402 + MPP + Stripe; GA Aug 2026), with the x402 Bazaar MCP server via AgentCore Gateway
 
 ### Crypto & Web3
 
@@ -434,6 +449,7 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 - **Tempo Labs** — MPP co-author (Paradigm-backed, payments-optimized L1)
 - **Radius Network** — x402-compatible stablecoin L1 for agentic micropayments (mainnet launched Mar 2026; sub-second finality, sub-penny fees) ([docs](https://docs.radiustech.xyz/developer-resources/x402-integration))
 - **Ripple / XRPL** — XRPL AI Starter Kit (Jun 2026) for agentic payments via x402, settling in XRP and RLUSD; XRPL named a settlement partner in Mastercard AP4M ([Ripple](https://ripple.com/insights/xrpl-ai-starter-kit/))
+- **Binance — Agent OS** — Standardized layer (launched Aug 2026) connecting external AI applications to Binance market data, wallets, payments, and on-chain functions; initial MCP implementation supports dedicated subaccounts, configurable permissions, and revocation — separating agent reasoning from tightly controlled execution authority ([PR Newswire](https://www.prnewswire.com/news-releases/binance-introduces-agent-os-to-connect-ai-applications-to-financial-infrastructure-302856306.html))
 - **Circle — Arc L1 + Agent Stack** — [Agent Stack](https://www.circle.com/blog/introducing-circle-agent-stack-financial-infrastructure-for-the-agentic-economy) (launched May 11, 2026) gives agents controlled USDC access — Agent Wallets, Agent Marketplace, Circle CLI, Circle Skills, and **Nanopayments** (gas-free USDC transfers as small as one-millionth of a dollar via Circle Gateway). Settlement targets **Arc**, Circle's stablecoin-native L1 (USDC as native gas); Arc has run a public testnet since Oct 2025 with **mainnet expected summer 2026** (still pre-mainnet as of Jul 2026). Circle also raised a **$222M ARC token presale** (backers incl. BlackRock, a16z). ([Decrypt](https://decrypt.co/367490/circle-ai-agents-usdc-stablecoin-powers-222m-arc-token-sale), [Phemex](https://phemex.com/news/article/circle-unveils-arc-blockchain-whitepaper-mainnet-launch-set-for-summer-2026-82817))
 
 ---
@@ -441,6 +457,32 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 ## 📰 News & Analysis
 
 ### Major Launches & Milestones
+
+#### Amazon Bedrock AgentCore Payments Reaches GA (August 2026)
+
+- [AWS: AgentCore payments is now generally available (Aug 18, 2026)](https://aws.amazon.com/about-aws/whats-new/2026/08/bedrock-agentcore-payments-ga/) — Moved from preview to **general availability**. GA adds **MPP protocol support** (pay any MPP-compatible service with no extra code) and the **x402 "upto" scheme** (spending ceilings instead of fixed prices), alongside Coinbase and Stripe Privy wallet integration, infrastructure-level payment limits, and end-to-end observability — the first hyperscaler to make agent payments a standard managed runtime capability
+- [AWS ML Blog: GA deep dive](https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale/) · [The Paypers](https://thepaypers.com/payments/news/amazon-bedrock-agentcore-payments-is-now-generally-available)
+
+#### Rain Launches the Agentic Payments Alliance (August 2026)
+
+- [Rain: Agentic Payments Alliance launch (Aug 18, 2026)](https://www.prnewswire.com/news-releases/rain-launches-the-agentic-payments-alliance-to-guide-the-future-of-agent-driven-commerce-302853532.html) — 26 founding members including **Visa, Mastercard, Circle, Fiserv, Fireblocks, Shift4, Solana, Uniswap Labs, Chainalysis, and Remitly**, developing shared standards for agent identity, authorization, fraud, and programmable payments — the first governance coalition spanning both card networks and crypto-native infrastructure. Only 7 members overlap with the x402 Foundation, underscoring how fragmented standards governance remains ([HaiPay analysis](https://www.haipay.net/news/agentic-payments-alliance-x402-membership-overlap))
+- [PYMNTS](https://www.pymnts.com/news/artificial-intelligence/2026/visa-and-mastercard-join-rains-agentic-commerce-coalition/) · [Electronic Payments International](https://www.electronicpaymentsinternational.com/news/rain-forms-agentic-payments-alliance-with-visa-mastercard-and-other-players/)
+
+#### Stripe Agrees to Acquire OpenRouter (August 2026)
+
+- [Stripe: agreement to acquire OpenRouter (Aug 16, 2026)](https://stripe.com/newsroom/news/stripe-agrees-to-acquire-openrouter) — Stripe's largest known acquisition (**$7B+** per Bloomberg), bringing in the gateway that routes traffic across 400+ models from 80+ providers. Extends Stripe's agentic stack beyond money movement into the **model-consumption/token-metering layer** — one commercial stack for metering AI usage, selecting inference providers, and monetizing agent-facing services
+- [TechCrunch](https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/) · [The New Stack](https://thenewstack.io/stripe-acquires-openrouter-tokens/)
+
+#### Cloudflare Agents Week — Programmable Agent Wallets + WebMCP (August 2026)
+
+- [Cloudflare: programmable wallets for AI agents](https://blog.cloudflare.com/wallets/) — Developers provision **stablecoin-backed wallets to accounts and virtual wallets to individual agents**, with spending allowances, transaction limits, and merchant restrictions; pairs x402-compatible machine payments with delegated identity so merchants can distinguish authorized agents from unidentified automation
+- [Cloudflare: WebMCP developer preview](https://blog.cloudflare.com/webmcp/) — Site operators expose structured browser-agent actions (search, cart, authenticated workflows) without building a separate API — complements Chrome's WebMCP origin trial
+- Also shipped: [Agent Readiness + Answer Engine Optimization tooling](https://blog.cloudflare.com/aeo/) (measure whether agents can discover/interpret a site and how often assistants recommend it), [WriteGuard private beta](https://blog.cloudflare.com/mcp-portal-writeguard-private-beta/) (least-privilege authorization for MCP write operations), and the [Agent Access Model](https://blog.cloudflare.com/the-agent-access-model/) (task-scoped delegated authority)
+
+#### Mastercard Proto Sandbox Goes Live in the UK (August 2026)
+
+- [Finextra: Mastercard picks UK for agentic AI sandbox](https://www.finextra.com/newsarticle/48097/mastercard-picks-uk-as-test-environment-for-agentic-ai-sandbox) — **Proto**, Mastercard's agentic commerce sandbox, goes live in the UK in August (announced Jul 16) so retailers and financial institutions can test agent discoverability, trusted payment flows, and dispute handling at scale before launch; includes three new enterprise agents (shopping, onboarding, disputes)
+- [Payment Expert](https://paymentexpert.com/2026/07/16/mastercard-ai-sandbox-uk-payments/) · [Mastercard Newsroom](https://www.mastercard.com/news/europe/en-uk/perspectives/en-gb/helping-the-uk-get-ai-ready/)
 
 #### An Accountability Layer Emerges — LCP and A-Comm Evidence Protocol (June–July 2026)
 
@@ -522,6 +564,7 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 - [AWS What's New: AgentCore Payments (preview)](https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-bedrock-agentcore-payments-preview/)
 - [AWS ML Blog: Agents that transact, built with Coinbase and Stripe](https://aws.amazon.com/blogs/machine-learning/agents-that-transact-introducing-amazon-bedrock-agentcore-payments-built-with-coinbase-and-stripe/)
 - [Coinbase Blog: AgentCore Payments powered by x402](https://www.coinbase.com/blog/introducing-amazon-bedrock-agentcore-payments-powered-by-x402-and-coinbase)
+- *Superseded by the August 2026 GA — see above*
 
 #### Google Gemini Spark (Google I/O, May 2026)
 
@@ -684,4 +727,4 @@ This list is released under [CC0 1.0](LICENSE) (Public Domain). No rights reserv
 
 ---
 
-**Keywords:** `ucp` `ap2` `agent-payments` `agentic-commerce` `a2a` `x402` `acp` `mpp` `machine-payments-protocol` `amp` `agentic-mobile-protocol` `trusted-agent-protocol` `agent-pay` `ap4m` `agent-pay-for-machines` `verifiable-intent` `fido-alliance` `linux-foundation` `adyen-agentic` `open-usd` `ousd` `sekau` `visa-payment-passkeys` `monetization-gateway` `pay-per-crawl` `gemini-spark` `web-bot-auth` `mcp` `stablecoins` `verifiable-credentials` `agentcore` `erc-8183` `erc-8004` `google-cloud` `coinbase` `stripe` `openai` `aws` `tempo` `ripple` `xrpl` `rlusd` `nuvei-agentic` `know-your-agent` `webmcp` `circle-arc` `agent-stack` `agentic-administration` `x402-foundation` `universal-cart` `alipay-ai-pay` `agentic-commerce-trust-protocol` `qwen-app` `shopify-catalog` `webbotauth` `ietf` `http-message-signatures` `aep` `a-comm` `evidence-protocol` `legal-context-protocol` `lcp` `integra-ledger` `aaa-arbitration` `rails` `agentic-clearing` `accountability-layer` `ucp-tech-council` `visa-agent-directory` `square-ordering` `order-by-cash-app` `acp-2026-04-17`
+**Keywords:** `ucp` `ap2` `agent-payments` `agentic-commerce` `a2a` `x402` `acp` `mpp` `machine-payments-protocol` `amp` `agentic-mobile-protocol` `trusted-agent-protocol` `agent-pay` `ap4m` `agent-pay-for-machines` `verifiable-intent` `fido-alliance` `linux-foundation` `adyen-agentic` `open-usd` `ousd` `sekau` `visa-payment-passkeys` `monetization-gateway` `pay-per-crawl` `gemini-spark` `web-bot-auth` `mcp` `stablecoins` `verifiable-credentials` `agentcore` `erc-8183` `erc-8004` `google-cloud` `coinbase` `stripe` `openai` `aws` `tempo` `ripple` `xrpl` `rlusd` `nuvei-agentic` `know-your-agent` `webmcp` `circle-arc` `agent-stack` `agentic-administration` `x402-foundation` `universal-cart` `alipay-ai-pay` `agentic-commerce-trust-protocol` `qwen-app` `shopify-catalog` `webbotauth` `ietf` `http-message-signatures` `aep` `a-comm` `evidence-protocol` `legal-context-protocol` `lcp` `integra-ledger` `aaa-arbitration` `rails` `agentic-clearing` `accountability-layer` `ucp-tech-council` `visa-agent-directory` `square-ordering` `order-by-cash-app` `acp-2026-04-17` `agentic-payments-alliance` `rain` `openrouter` `proto-sandbox` `agentcore-ga` `mppx` `cloudflare-agent-wallets` `binance-agent-os` `glassnode`
