@@ -270,6 +270,7 @@
 ### AP2 Implementation
 
 - [AP2 Python & Android Samples](https://github.com/google-agentic-commerce/AP2)
+- [WireSwitch TypeScript Client](https://github.com/vrmta/wireswitch) — WireSwitch translates between payment protocols so an agent can pay a merchant that does not speak the same language. Sign locally. Hop once. Test is free. It is not a facilitator.
 
 ### x402 Implementation
 
