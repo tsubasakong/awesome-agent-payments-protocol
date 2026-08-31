@@ -397,6 +397,9 @@ The Cloudflare Agents SDK and MCP servers support x402 out of the box. x402 v2 a
 
 **Stripe + Tempo Labs (Paradigm)** co-authored MPP. Design partners include Anthropic, DoorDash, Mastercard, Nubank, OpenAI, Ramp, Revolut, Shopify, Standard Chartered, and Visa. Cloudflare supports MPP in its Agents SDK. ([Source: Stripe Blog, Mar 2026](https://stripe.com/blog/machine-payments-protocol))
 
+**Live services accepting MPP:**
+- [NitroTranslate (Alconost)](https://nitrotranslate.com) — human translation API where AI agents pay per request over HTTP 402 via MPP, no account required ([agentic flow](https://docs.nitrotranslate.com/agentic-flow), [commerce.json](https://nitrotranslate.com/.well-known/commerce.json))
+
 ### AMP / Ant International
 
 Open-sourced by **Ant International** and implemented with **Alipay+** wallet partners (40+ wallets, 1.8B accounts, 150M merchants). AMP targets mobile-native agentic payments across smartphones, smartwatches, AR glasses, and in-car systems. ([Source: Business Wire, Apr 2026](https://www.businesswire.com/news/home/20260427209524/en/Ant-International-Launches-Open-Sourced-Agentic-Mobile-Protocol-to-Drive-AI-Commerce))
