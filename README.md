@@ -101,6 +101,7 @@
 - [Linux Foundation: x402 Foundation formation](https://www.linuxfoundation.org/press/linux-foundation-is-launching-the-x402-foundation-and-welcoming-the-contribution-of-the-x402-protocol) — x402 contributed by Coinbase to the **Linux Foundation** for neutral governance (Apr 2026); founding contributors Coinbase, Cloudflare, and Stripe
 - [Linux Foundation: x402 Foundation **operational launch** (Jul 14, 2026)](https://www.linuxfoundation.org/press/linux-foundation-announces-operational-launch-of-x402-foundation-to-standardize-internet-native-payments-for-ai-agents-and-applications) — Coinbase's contribution of the protocol **completed**; governance body live with **40 members** across premier and general tiers ([PRNewswire](https://www.prnewswire.com/news-releases/linux-foundation-announces-operational-launch-of-x402-foundation-to-standardize-internet-native-payments-for-ai-agents-and-applications-302824778.html) · [PYMNTS](https://www.pymnts.com/news/2026/40-finance-and-tech-giants-unite-to-standardize-agentic-payments/))
 - [Cloudflare Blog: x402 Foundation](https://blog.cloudflare.com/x402/) — Cloudflare's x402 Foundation note (with Coinbase)
+- [Toll402](https://toll402.dev) — Pay-per-call tool gateway on x402 for AI agents: web/PDF/provenance tools, a 4M-business verified directory, agent-forged tools and 2,000+ aggregated x402 services behind one wallet; MCP server (`npx -y toll402-mcp`), [llms.txt](https://toll402.dev/llms.txt), paid listings for other x402/MCP/A2A services
 
 ### ACP (Agentic Commerce Protocol)
 
