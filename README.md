@@ -681,6 +681,7 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 
 - [x402 Deep Dive & Demos](https://www.youtube.com/watch?v=pL5LxhZ8iCY) — Technical walkthrough
 - [x402 Short Explainer](https://www.youtube.com/shorts/tgpVtCdu3tU) — Quick overview
+- [HostDeFi](https://hostdefi.com/) - DEX front-end with a live A2A agent card (/.well-known/agent.json): agents can scan tokens (A+–F safety grades), price swaps and pay per call in USDC via x402.
 
 ### ACP
 
