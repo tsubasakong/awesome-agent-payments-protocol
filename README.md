@@ -300,6 +300,7 @@
 
 - [x402 Monorepo (GitHub)](https://github.com/coinbase/x402) — `@x402/core`, `@x402/evm`, `@x402/svm`, `@x402/axios`, `@x402/fetch`, `@x402/express`, `@x402/hono`, `@x402/next`, `@x402/paywall`
 - [x402 Rust crates + Facilitator](https://github.com/x402-rs/x402-rs)
+- [AffixIO](https://www.npmjs.com/package/affixio) — Agentic Pay Kit with x402BeforePay host-side signed yes/no ACTION attestation before pay (KYA; not person KYC). ([GitHub](https://github.com/AffixIO/SDK)) ([docs](https://www.affix-io.com/agent-trust/))
 - [x402-proxy](https://github.com/cascade-protocol/x402-proxy) — `curl` for x402 paid APIs. Auto-pays HTTP 402 responses with USDC, with MCP stdio proxy for AI agents
 
 ### ACP Implementation
