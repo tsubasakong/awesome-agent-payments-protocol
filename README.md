@@ -296,6 +296,8 @@
 - [Ripple XRPL AI Starter Kit](https://ripple.com/insights/xrpl-ai-starter-kit/) — Developer kit for agentic payments on the XRP Ledger via **x402**, settling in XRP and **RLUSD**. First-phase release ships an XRPL Docs MCP server, two Claude skills (wallet + payment ops), and x402 integration; 3–5s settlement with fixed fees. Named a settlement partner in Mastercard AP4M. Launched Jun 10, 2026. ([PYMNTS](https://www.pymnts.com/blockchain/2026/ripple-targets-agentic-payments-market-with-xrpl-starter-kit/))
 - [Glassnode agentic data access](https://research.glassnode.com/agentic-payments-glassnode-data-for-your-ai-agent/) — Pay-per-call access to on-chain metrics via **x402** in USDC — no API keys, subscriptions, or signup; MCP-capable agents discover an endpoint's price, pay, and retrieve data autonomously (Aug 2026)
 
+- [SolSigs](https://solsigs.com) — Live Solana data API for AI agents via x402 micropayments in USDC. 6 endpoints: DEX feeds, arbitrage scanning, wallet intelligence, launch detection, LLM summarizer, RPC balancing ($0.001–$0.010). Custom x402 middleware, self-hosted. ([Discover](https://solsigs.com/discover), [x402 JSON](https://solsigs.com/.well-known/x402.json))
+
 #### SDKs & Libraries
 
 - [x402 Monorepo (GitHub)](https://github.com/coinbase/x402) — `@x402/core`, `@x402/evm`, `@x402/svm`, `@x402/axios`, `@x402/fetch`, `@x402/express`, `@x402/hono`, `@x402/next`, `@x402/paywall`
