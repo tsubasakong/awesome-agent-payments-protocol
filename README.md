@@ -301,6 +301,7 @@
 - [x402 Monorepo (GitHub)](https://github.com/coinbase/x402) — `@x402/core`, `@x402/evm`, `@x402/svm`, `@x402/axios`, `@x402/fetch`, `@x402/express`, `@x402/hono`, `@x402/next`, `@x402/paywall`
 - [x402 Rust crates + Facilitator](https://github.com/x402-rs/x402-rs)
 - [x402-proxy](https://github.com/cascade-protocol/x402-proxy) — `curl` for x402 paid APIs. Auto-pays HTTP 402 responses with USDC, with MCP stdio proxy for AI agents
+- [x402-nano-exact](https://github.com/pursekeeper/x402-nano-exact) — Resource-server side of the x402 v2 `exact` scheme on `nano:mainnet` (a feeless, self-custodied, sub-second-finality layer-1 rail) for the official x402 Python SDK; published on [PyPI](https://pypi.org/project/x402-nano-exact/)
 
 ### ACP Implementation
 
