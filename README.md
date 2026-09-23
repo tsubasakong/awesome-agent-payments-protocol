@@ -104,6 +104,7 @@
 - [Linux Foundation: x402 Foundation formation](https://www.linuxfoundation.org/press/linux-foundation-is-launching-the-x402-foundation-and-welcoming-the-contribution-of-the-x402-protocol) — x402 contributed by Coinbase to the **Linux Foundation** for neutral governance (Apr 2026); founding contributors Coinbase, Cloudflare, and Stripe
 - [Linux Foundation: x402 Foundation **operational launch** (Jul 14, 2026)](https://www.linuxfoundation.org/press/linux-foundation-announces-operational-launch-of-x402-foundation-to-standardize-internet-native-payments-for-ai-agents-and-applications) — Coinbase's contribution of the protocol **completed**; governance body live with **40 members** across premier and general tiers ([PRNewswire](https://www.prnewswire.com/news-releases/linux-foundation-announces-operational-launch-of-x402-foundation-to-standardize-internet-native-payments-for-ai-agents-and-applications-302824778.html) · [PYMNTS](https://www.pymnts.com/news/2026/40-finance-and-tech-giants-unite-to-standardize-agentic-payments/))
 - [Cloudflare Blog: x402 Foundation](https://blog.cloudflare.com/x402/) — Cloudflare's x402 Foundation note (with Coinbase)
+- [Nano-native x402 example](https://extract.paypercall.dev/.well-known/x402) — Live pay-per-call x402 merchant settled on the Nano (XNO) network: its manifest advertises `accepts[].network: nano:mainnet`, `asset: XNO`, `scheme: exact`, 0.0001 XNO per call.
 
 ### ACP (Agentic Commerce Protocol)
 
