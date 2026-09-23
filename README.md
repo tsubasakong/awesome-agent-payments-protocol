@@ -4,7 +4,7 @@
 
 **PRs welcome!** Found something amazing? [Open a PR](../../pulls) or [suggest a resource](../../issues/new?template=add_resource.yml) 🎯
 
-*Last updated: 2026-09-14*
+*Last updated: 2026-09-22*
 
 ---
 
@@ -51,6 +51,8 @@
 - [Amazon, Meta, Microsoft, Salesforce, and Stripe join the UCP Tech Council (Apr 24, 2026)](https://ppc.land/amazon-meta-microsoft-salesforce-and-stripe-join-ucp-tech-council/) — Five new members join founders Google, Shopify, Etsy, Target, and Wayfair (now **10**); the Tech Council is UCP's steering body, reviewing technical contribution proposals ([The Paypers](https://thepaypers.com/payments/news/amazon-meta-microsoft-salesforce-and-stripe-join-the-universal-commerce-protocol-council))
 - [**UCP v2026-08-25 release (Aug 25, 2026)**](https://github.com/Universal-Commerce-Protocol/ucp/releases/tag/v2026-08-25) — Latest shipped snapshot on the Tech Council's **quarterly release** cadence. Vendor-agnostic **3D Secure (3DS2)** via a new `actions[]` primitive, **Web Bot Auth interop**, a **multi-vertical refactor** (Shopping / Payment / Common namespaces, polymorphic token binding), **grocery readiness** (location search & lookup, operating hours, fractional quantities), **payment terms & schedules** (deferred, deposits, installments), **split payments**, a **loyalty extension**, delegated IdPs, and reverse-DNS buyer consent. Includes **breaking schema changes** (fulfillment restructure, `keys[]` as sole signing-key field, payment extensions moved to `dev.ucp.common.payment.*`) ([ucp.dev announcements](http://ucp.dev/documentation/announcements/))
 - **Domain Technical Councils (Jul–Sep 2026):** all three now seated — **Food TC** (Jul 16: Block/Square, DoorDash, Google, Toast, Uber Eats), **Lodging TC** (Aug 11: Amadeus, Booking.com, Expedia, Google, Hilton, Marriott, Trip.com), and **Payments TC** (Sep 2: **Adyen, Ant International, Coinbase, Global Payments, Google, PayPal, Shopify, Stripe**). Stripe also joined the **Governing Council** (Apr 28) alongside permanent members Google and Shopify ([ucp.dev announcements](http://ucp.dev/documentation/announcements/); [Payments TC discussion #798](https://github.com/Universal-Commerce-Protocol/ucp/discussions/798))
+- **UCP adoption surge (Sep 2026, independent census):** Shopify's template moved to **v2026-08-25** on Aug 28–29 (~10,600 stores in two days); between **Sep 17–19 Shopify switched on identity linking** (declarations 27 → **7,355**, nearly all delegating to Shop accounts); on **Sep 22 Wix began rolling out cart** across its ~6,929 stores. Census as of Sep 22: **17,767 verified stores**, ~60% on v2026-08-25, **14** commerce platforms with a verified store (up from 6), and the **first production merchant declaring a payment token** (AP2 mandates on the new `common.payment` namespace) ([UCP Checker — State of Agentic Commerce, Sep 2026](https://ucpchecker.com/blog/state-of-agentic-commerce-september-2026))
+- **Salesforce Commerce Cloud — UCP GA in October 2026** (announced at Dreamforce, Sep 15): Commerce Cloud merchants get UCP-powered discovery and checkout in Google Search / AI Mode and the Gemini app, with payments and order management kept on the merchant's existing stack ([Salesforce](https://www.salesforce.com/commerce/ai/agentic-commerce/universal-commerce-protocol/); [UCP Checker](https://ucpchecker.com/blog/salesforce-commerce-cloud-ucp-october))
 
 ### AP2 (Agent Payments Protocol)
 
@@ -257,6 +259,8 @@
 
 > **Naming note:** the protocol draft became a WG document (`draft-ietf-webbotauth-httpsig-protocol`) on Sep 1, 2026; the directory and registry drafts remain individual submissions for now. Earlier, the work was renamed under the `webbotauth` scheme in June 2026. The older `draft-meunier-web-bot-auth-architecture` is expired and archived, and `draft-meunier-web-bot-auth-directory` never existed as a Datatracker document — the directory work lived at `draft-meunier-http-message-signatures-directory` before being replaced. Cite the current drafts above.
 
+> **Why it matters (Sep 2026):** Amazon began blocking **Meta's Muse** personal agent on Sep 20–21, citing no advance notice, **no agent self-identification** while browsing, and credential-capture concerns — the first high-profile retailer-vs-agent dispute over agent identity, and a live use case for Web Bot Auth, Visa TAP, and UCP agent identification ([GeekWire](https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/), [Retail Dive](https://www.retaildive.com/news/amazon-meta-muse-ai-agent-shopping-experience/831018/)). See [News](#meta-launches-muse-amazon-blocks-it-september-2026).
+
 ### Research Papers
 
 - [RAILS: Verification-Native Clearing for Agentic Commerce](https://arxiv.org/abs/2606.08790) — de Valois-Franklin & Bogdan (Jun 7, 2026). Formalizes the **agentic clearing problem** — MCP, A2A, x402, AP2 and the network protocols each *assume* a determination of whether an agent met its delegated obligation, but none produce one. Proposes seven primitives (Obligation Object, Evidence Envelope, Verification Mesh, Clearing Decision, Settlement Instruction, Clearing Passport, Finality Rules) with a soundness property: no financially material settlement rests on evidence below the obligation's admissibility floor
@@ -272,6 +276,8 @@
 - [UCP GitHub Repository](https://github.com/Universal-Commerce-Protocol/ucp) — Spec, SDKs (Python, JavaScript), and reference implementations
 - [UCP Python Sample](https://github.com/Universal-Commerce-Protocol/ucp) — See `samples/` in the repo
 - [Google Merchant UCP Integration Guide](https://developers.google.com/merchant/ucp)
+- [Anthropic — Claude Commerce Agents (`anthropics/commerce-agents`)](https://github.com/anthropics/commerce-agents) — Apache-2.0 reference blueprint (Sep 2, 2026): a customer-facing **shopping agent** (search, compare, cart, hand-off to the merchant's own checkout) and a staff-facing **merchant agent** (every write staged for human approval), with retail, travel, telecom, and entertainment examples; runs on the Messages API, Agent SDK, or Managed Agents, and ships a Claude Code scaffolding plugin. Protocol-agnostic — never places orders or charges cards itself
+- [Shopify — Claude for Commerce examples](https://github.com/Shopify/claude-for-commerce-examples) — Shopify implementation of the blueprint: a storefront shopping agent over **UCP** endpoints with optional **Sign in with Shop**, handing off to the store's hosted checkout via `continue_url`; plus a merchant agent over the Admin API
 
 ### AP2 Implementation
 
@@ -377,7 +383,7 @@
 
 ### UCP
 
-Co-developed by **Google** and **Shopify**. Endorsed by 20+ partners including Etsy, Wayfair, Target, Walmart, Adyen, American Express, Best Buy, Flipkart, Macy's Inc., Mastercard, Stripe, The Home Depot, Visa, and Zalando. ([Source: Google Blog, Jan 2026](https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/)). May 2026: **Universal Cart** extends the cart across **Search, Gemini, YouTube, and Gmail**, built on Google Wallet, with UCP-powered checkout via Google Pay — live merchants include **Nike, Sephora, Target, Ulta Beauty, Walmart, Wayfair**, and Shopify merchants such as **Fenty** and **Steve Madden**; the brand always remains merchant of record. Rolling out across Search and the Gemini app in the U.S. over summer 2026, YouTube and Gmail to follow. UCP checkout expands to **Canada and Australia** in the coming months and the **U.K.** later, with new verticals starting in **hotel booking and local food delivery**. ([Source: Google I/O 2026](https://blog.google/products-and-platforms/products/shopping/google-shopping-cart/); [Google Marketing Live](https://blog.google/products-and-platforms/products/shopping/shopping-updates-google-marketing-live/)) June 2026: Shopify made UCP **self-serve** — from Jun 17, any developer can register an agent profile in the Shopify Developer Dashboard and call the public MCP endpoint with no approval gate. ([Source: Shopify](https://www.shopify.com/news/ai-commerce-at-scale)) August–September 2026: the **v2026-08-25** spec shipped (3DS2, Web Bot Auth interop, multi-vertical refactor, grocery, payment schedules), and the **Payments Technical Council** was seated on Sep 2 with Adyen, Ant International, Coinbase, Global Payments, Google, PayPal, Shopify, and Stripe — notably placing a stablecoin-native member (Coinbase) and Ant alongside the card-side PSPs on UCP's payment-layer governance. ([Source: ucp.dev](http://ucp.dev/documentation/announcements/))
+Co-developed by **Google** and **Shopify**. Endorsed by 20+ partners including Etsy, Wayfair, Target, Walmart, Adyen, American Express, Best Buy, Flipkart, Macy's Inc., Mastercard, Stripe, The Home Depot, Visa, and Zalando. ([Source: Google Blog, Jan 2026](https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/)). May 2026: **Universal Cart** extends the cart across **Search, Gemini, YouTube, and Gmail**, built on Google Wallet, with UCP-powered checkout via Google Pay — live merchants include **Nike, Sephora, Target, Ulta Beauty, Walmart, Wayfair**, and Shopify merchants such as **Fenty** and **Steve Madden**; the brand always remains merchant of record. Rolling out across Search and the Gemini app in the U.S. over summer 2026, YouTube and Gmail to follow. UCP checkout expands to **Canada and Australia** in the coming months and the **U.K.** later, with new verticals starting in **hotel booking and local food delivery**. ([Source: Google I/O 2026](https://blog.google/products-and-platforms/products/shopping/google-shopping-cart/); [Google Marketing Live](https://blog.google/products-and-platforms/products/shopping/shopping-updates-google-marketing-live/)) June 2026: Shopify made UCP **self-serve** — from Jun 17, any developer can register an agent profile in the Shopify Developer Dashboard and call the public MCP endpoint with no approval gate. ([Source: Shopify](https://www.shopify.com/news/ai-commerce-at-scale)) August–September 2026: the **v2026-08-25** spec shipped (3DS2, Web Bot Auth interop, multi-vertical refactor, grocery, payment schedules), and the **Payments Technical Council** was seated on Sep 2 with Adyen, Ant International, Coinbase, Global Payments, Google, PayPal, Shopify, and Stripe — notably placing a stablecoin-native member (Coinbase) and Ant alongside the card-side PSPs on UCP's payment-layer governance. ([Source: ucp.dev](http://ucp.dev/documentation/announcements/)) Mid/late September 2026: Shopify enabled **identity linking** fleet-wide (7,355 stores declaring it by Sep 19), **Wix** began rolling out **cart** (Sep 22), UCP stores now span **14** commerce platforms (incl. Salla, Zid, Boutir, Cafe24, Tiendanube, Jumpseller, BigCommerce), and **Salesforce Commerce Cloud** set UCP GA for **October 2026**. ([Source: UCP Checker](https://ucpchecker.com/blog/state-of-agentic-commerce-september-2026); [Salesforce](https://www.salesforce.com/commerce/ai/agentic-commerce/universal-commerce-protocol/))
 
 ### AP2
 
@@ -435,6 +441,7 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 - **Stripe** — ACP co-creator, MPP co-author, UCP endorser; agreed to acquire **OpenRouter** ($7B+, Aug 2026) to extend into the model-consumption/token-metering layer
 - **NPCI / UPI (India)** — **Unified Agent Protocol** (in development; **not yet published or launched**): reported design lets registered/verified agents transact on UPI within user-set limits without per-transaction approval, built on UPI Circle delegation. At Global Fintech Fest 2026 (Sep 8–11) NPCI's chairman publicly acknowledged NPCI is "examining the protocols" for agent identification/authorisation but stressed AI "may recommend" while authentication and settlement stay deterministic; no spec or launch date was given ([MediaNama](https://www.medianama.com/2026/09/223-npci-ai-agents-upi-payments/); [Reuters](https://www.brecorder.com/news/40437409/india-preparing-rollout-of-agentic-payments-on-upi-sources-say))
 - **AWS** — Bedrock AgentCore Payments (**GA Aug 2026**), managed x402 + MPP + Stripe surface built with Coinbase and Stripe
+- **GoCardless** — Processed the **UK's first live agentic account-to-account payment** (announced Sep 22, 2026): an AI agent set up a Direct Debit mandate in-conversation for a recurring donation to Trussell, built under the FCA's AI Live Testing programme — an open-banking / bank-rail alternative to card and stablecoin agent payments
 
 ### Stablecoin & Settlement Infrastructure
 
@@ -449,7 +456,8 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 
 - **Google Cloud** — AP2 creator, UCP co-developer
 - **OpenAI** — ACP co-creator (with Stripe)
-- **Anthropic** — MPP design partner
+- **Anthropic** — MPP design partner; released **Claude Commerce Agents** (Sep 2026), open-source shopping + merchant agent blueprints, with a Shopify UCP storefront implementation
+- **Meta** — **Muse** personal agent (Sep 8, 2026) that shops and pays on users' behalf, including via browser automation; Shopify partnered for agentic checkout, while Amazon blocked it (Sep 20–21) over agent identification
 - **Shopify** — UCP co-developer, AP2 & ACP partner
 - **AWS** — Bedrock AgentCore Payments (x402 + MPP + Stripe; GA Aug 2026), with the x402 Bazaar MCP server via AgentCore Gateway
 
@@ -467,6 +475,32 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 ## 📰 News & Analysis
 
 ### Major Launches & Milestones
+
+#### Meta Launches Muse; Amazon Blocks It (September 2026)
+
+- [TechCrunch: Meta debuts its Muse AI agent (Sep 8, 2026)](https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/) — Personal agent that executes multi-step tasks across email, calendar, payments, dining, and shopping; free with paid tiers on iOS, Android, web, and WhatsApp; operates services without APIs through a browser. Rose to **#1 on the U.S. App Store**; Shopify announced a partnership enabling agentic checkout on Shopify stores
+- [GeekWire: Amazon blocks Meta's Muse (Sep 2026)](https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/) — Amazon began blocking Muse on Sep 20–21, saying it was not notified, the agent **does not identify itself** when browsing, and it appears to capture customer credentials (Meta says Muse never sees passwords or payment details). The dispute is about **agent identity and terms of access**, not payment rails — the problem Web Bot Auth, TAP, KYA, and UCP agent identification aim to solve
+- [Retail Dive](https://www.retaildive.com/news/amazon-meta-muse-ai-agent-shopping-experience/831018/) · [CNBC](https://www.cnbc.com/2026/09/21/meta-muse-personal-ai-agent-downloads.html) · [The Register](https://www.theregister.com/ai-and-ml/2026/09/21/amazon-shows-metas-muse-ai-shopping-agent-the-door/5297777)
+
+#### UCP Adoption Surge — Shopify Identity Linking, Wix Cart, 14 Platforms (September 2026)
+
+- [UCP Checker: State of Agentic Commerce — September 2026](https://ucpchecker.com/blog/state-of-agentic-commerce-september-2026) — Shopify moved its template to **v2026-08-25** on Aug 28–29 (~10,600 stores), then enabled **identity linking** on Sep 17–19 (27 → **7,355** stores, all delegating to Shop accounts); **Wix** began rolling out **cart** on Sep 22 (3,549 of 6,929 stores by mid-afternoon). Census: **17,767 verified stores**, **14** named platforms with a verified store (Salla, Zid, Boutir, Cafe24, Tiendanube, Tray, Jumpseller, BigCommerce, WooCommerce, and more), and the **first production merchant declaring a payment token**. Shopping TC minutes put the **next spec release in early December or January**
+- Caveat: nearly all identity linking now runs through a **single provider** (Shop accounts), and payment tokens remain effectively pre-production
+
+#### Salesforce Commerce Cloud Sets UCP GA for October 2026 (September 2026)
+
+- [Salesforce: Universal Commerce Protocol](https://www.salesforce.com/commerce/ai/agentic-commerce/universal-commerce-protocol/) — Announced at Dreamforce (Sep 15): UCP integration for Commerce Cloud reaches **GA in October 2026**, enabling discovery and checkout in Google Search / AI Mode and Gemini while payments, compliance, and order management stay on the merchant's existing stack. Potentially the largest new-platform UCP event since Wix ([UCP Checker: what Commerce Cloud storefronts declare pre-launch](https://ucpchecker.com/blog/salesforce-commerce-cloud-ucp-october))
+
+#### GoCardless — UK's First Live Agentic Account-to-Account Payment (September 2026)
+
+- [GoCardless: first agentic A2A payment in the UK](https://gocardless.com/blog/gocardless-first-agentic-payment-uk) — An AI agent explained the charity Trussell's work, offered monthly donation tiers, and set up a **Direct Debit mandate** without the donor leaving the conversation. Built through the **FCA's AI Live Testing** programme; positions account-to-account (open banking) rails as a foundation for agentic payments alongside cards and stablecoins
+- [Finextra](https://www.finextra.com/pressarticle/110969/gocardless-processes-first-agentic-account-to-account-transaction-in-the-uk) · [Open Banking Expo](https://www.openbankingexpo.com/news/gocardless-processes-the-first-agentic-account-to-account-payment-in-the-uk/) · [FinTech Global](https://fintech.global/2026/09/22/gocardless-completes-uks-first-agentic-bank-payment/)
+
+#### Anthropic Open-Sources Claude Commerce Agents (September 2026)
+
+- [GitHub: anthropics/commerce-agents](https://github.com/anthropics/commerce-agents) — Released Sep 2, 2026 under Apache 2.0: reference **shopping agent** and **merchant agent** built once and runnable on the Messages API, Claude Agent SDK, or Managed Agents, with four vertical examples and a Claude Code plugin to scaffold new agents. Checkout is always a hand-off to the merchant; merchant writes are staged for human approval
+- [Shopify: Claude for Commerce examples](https://github.com/Shopify/claude-for-commerce-examples) — Shopify's implementation wires the shopping agent to **UCP** and **Sign in with Shop**
+- [Metaverse Post](https://mpost.io/anthropic-unveils-open-source-shopping-and-merchant-agent-toolkit-with-enterprise-reference-implementations/) · [Linas Beliūnas (Substack)](https://linas.substack.com/p/claude-commerce-agents)
 
 #### Visa, Mastercard, and Ant International Align on Know Your Agent (September 2026)
 
