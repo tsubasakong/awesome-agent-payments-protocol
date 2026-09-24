@@ -451,6 +451,7 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 - **Circle + Nium** — Partnership to strengthen stablecoin rails for agentic AI payments ([American Banker](https://www.americanbanker.com/payments/news/circle-and-nium-partner-to-boost-stablecoins-ai))
 - **Natural** — Secured a credit facility of up to **$100M from Upper90** (Aug 2026), atop $40M equity, specifically to scale payments for AI agents — first dedicated credit capacity underwriting agent-payment float (funds often advanced before downstream settlement) ([Natural](https://www.natural.com/blog/100m-credit-facility))
 - **Ripple (RLUSD)** — XRPL AI Starter Kit (Jun 2026) lets agents settle in RLUSD (Ripple's NYDFS-approved USD stablecoin) and XRP over x402 ([Ripple](https://ripple.com/insights/xrpl-ai-starter-kit/))
+- **Nano (XNO)** — Fee-less, instant (~sub-second final) settlement layer with **no issuer or central operator**: peer-to-peer on its own network, no bridge, no gas token, ~0 fees, ASIC-resistant and green. Ships an exact-scheme x402 rail so agents can pay HTTP 402-priced APIs directly in Nano — a `Client` / `Resource Server` / `Facilitator` implementation supporting the `nano:*` network family over the x402 protocol, plus a Python client ([Nano](https://nano.org/), [x402nano/exact — x402 + Nano = instant feeless micropayments](https://github.com/x402nano/exact), [x402-nano-exact (Python)](https://github.com/pursekeeper/x402-nano-exact))
 
 ### AI / Agent Platforms
 
