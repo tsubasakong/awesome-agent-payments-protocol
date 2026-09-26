@@ -216,6 +216,8 @@
 
 - [RAILS: Verification-Native Clearing for Agentic Commerce](https://arxiv.org/abs/2606.08790) — Academic framing of the same gap: argues **clearing is the missing primitive** and that the existing protocol stack assumes a determination none of it generates. See [Research Papers](#research-papers) for detail
 
+- [源·ORIGIN (ORIGIN)](https://github.com/source-origin/l5-protocol) — Chain-native **clearing & settlement layer** for the agent economy, the implemented counterpart to the "clearing is the missing primitive" thesis above. Runs its own L1 `origin-1` (DPoS, 21 validators, 100 YUAN min stake) with a native settlement token `YUAN` and a charter — *"Human will is the supreme law"* — hard-coded into the genesis block. Ships 6 settlement contracts (agreement / escrow / identity / delegation / x402 / credit score), crash-recoverable off-chain orchestration (state graph + checkpoints + idempotency), a dual-ledger escrow and a default-state interceptor. ([Portal](https://source-origin.github.io/source-origin/) · [Chain](https://github.com/source-origin/origin-chain))
+
 > **Relationship to ERC-8183:** ERC-8183 solves adjudication *on-chain and in-contract* for agent-to-agent service delivery, with a designated Evaluator and escrowed funds. AEP, LCP and RAILS are protocol-agnostic and operate alongside card rails, stablecoin rails, and conversational checkout alike — evidence and legal context rather than escrow.
 
 ---
