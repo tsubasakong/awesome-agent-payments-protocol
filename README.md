@@ -266,6 +266,7 @@
 - [RAILS: Verification-Native Clearing for Agentic Commerce](https://arxiv.org/abs/2606.08790) — de Valois-Franklin & Bogdan (Jun 7, 2026). Formalizes the **agentic clearing problem** — MCP, A2A, x402, AP2 and the network protocols each *assume* a determination of whether an agent met its delegated obligation, but none produce one. Proposes seven primitives (Obligation Object, Evidence Envelope, Verification Mesh, Clearing Decision, Settlement Instruction, Clearing Passport, Finality Rules) with a soundness property: no financially material settlement rests on evidence below the obligation's admissibility floor
 - [Paying to Know: Micro-Transaction Markets for Verified Product Information in Agentic E-Commerce](https://arxiv.org/html/2606.24783) — Micro-transaction markets in which agents pay for verified product attributes rather than trusting merchant-supplied feeds
 - "Towards Multi-Agent Economies: A2A + x402 Micropayments" — Proposes ledger-anchored identities with x402 for A2A micropayments
+- [Agentic Payments Readiness Dataset](https://github.com/Pink-Agentic-Payments/agentic-payments-readiness) - PinkWallet (2026). Evidence-linked dataset scoring 13 payment providers on 7 agent-readiness dimensions (agent SDK/API, MCP server, x402/AP2/ACP support, sandbox, spending guardrails, rails, docs), CC BY 4.0.
 
 ---
 
