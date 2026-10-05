@@ -325,6 +325,7 @@
 - [MPP relays (Aug 3, 2026)](https://mpp.dev/blog/relays) — Delegate MPP payment validation and settlement without changing the application's payment flow
 - [mppx identity support (Aug 12, 2026)](https://mpp.dev/blog/mppx-identity-support) — Verify agent identity across HTTP requests and payment retries
 - [mppx for agent SDKs and harnesses (Jul 27, 2026)](https://mpp.dev/blog/mppx-agent-runtimes) — Hooks connecting agent runtimes to paid tools and HTTP services through MPP; mpp.dev now lists **Amazon, Alchemy, Browserbase, Cloudflare, Dune, Parallel, and Visa** as integrations
+- [NitroTranslate](https://mppscan.com/server/fa5465422ded9fab3671bbccbda690b53a506a8a7e8023c041dd1f324c339a4b) — Live MPP-payable **human translation API**: agents order professional human (not machine) translation across 70+ languages and pay per call in USDC on Base via AgentCash (x402/MPP), no API keys or subscriptions. Listed on [mppscan](https://mppscan.com); install with `npx agentcash add https://api.nitrotranslate.com`
 
 ### A2A Implementation
 
