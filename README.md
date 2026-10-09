@@ -309,6 +309,7 @@
 - [x402 Monorepo (GitHub)](https://github.com/coinbase/x402) — `@x402/core`, `@x402/evm`, `@x402/svm`, `@x402/axios`, `@x402/fetch`, `@x402/express`, `@x402/hono`, `@x402/next`, `@x402/paywall`
 - [x402 Rust crates + Facilitator](https://github.com/x402-rs/x402-rs)
 - [x402-proxy](https://github.com/cascade-protocol/x402-proxy) — `curl` for x402 paid APIs. Auto-pays HTTP 402 responses with USDC, with MCP stdio proxy for AI agents
+- [x402 Inspector](https://dansgit2b.github.io/x402-inspector/) — Browser-only decoder/linter for x402 `PAYMENT-REQUIRED`, `X-PAYMENT`/`PAYMENT-SIGNATURE` and `PAYMENT-RESPONSE` values (v1 and v2), useful when debugging 402 flows. MIT, [source](https://github.com/Dansgit2b/x402-inspector).
 
 ### ACP Implementation
 
