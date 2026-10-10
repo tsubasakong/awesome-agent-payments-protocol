@@ -214,6 +214,10 @@
 - [legalcontextprotocol.org](https://legalcontextprotocol.org/) — Open standard attaching **verifiable legal terms, consent, and dispute-resolution procedure** to transactions carried out by autonomous agents, so an agent can access and verify the terms governing a transaction it is about to execute. Specification, reference implementation, and companion white paper published
 - [AAA press release (Jun 24, 2026)](https://www.adr.org/press-releases/aaa-and-industry-leaders-launch-legal-protocol-for-agentic-commerce/) — Stewarded by the **American Arbitration Association** and **Integra Ledger**. Founding contributors include Google, IBM, Circle, Wayfair, Stellar Development Foundation, Ava Labs, UiPath, Cardano, Hedera, Crossmint, Pinata, Aptos Foundation, Baselayer, Trinsic, First Person Cooperative, Sei Labs, and Mysten Labs ([overview](https://www.adr.org/news-and-insights/introducing-the-legal-context-protocol/), [Law.com](https://www.law.com/legaltechnews/2026/06/24/aaa-and-integra-ledger-announce-legal-protocol-for-ai-agent-transactions-/))
 
+#### INAM Protocol
+
+- [inamprotocol.org](https://inamprotocol.org/) — Open (Apache-2.0) receipts and reputation for AI agents. Both parties sign an Execution Receipt after a job; reputation is computed only from those receipts, and an x402 payment can be gated on the payee proving control of its payTo wallet and having countersigned work history. Merkle transparency log; receipts verify offline from did:key ([spec](https://docs.inamprotocol.org/spec/), [GitHub](https://github.com/inamprotocol/inam-protocol))
+
 #### RAILS (research)
 
 - [RAILS: Verification-Native Clearing for Agentic Commerce](https://arxiv.org/abs/2606.08790) — Academic framing of the same gap: argues **clearing is the missing primitive** and that the existing protocol stack assumes a determination none of it generates. See [Research Papers](#research-papers) for detail
