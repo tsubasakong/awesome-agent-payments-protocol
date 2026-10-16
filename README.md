@@ -29,6 +29,7 @@
 - [News & Analysis](#-news--analysis)
 - [Videos & Tutorials](#-videos--tutorials)
 - [Community](#-community)
+- [Money Reactor](https://github.com/makar52nn2016-jpg/money-reactor) — Live x402 service on Base: funded crypto bounty radar + GitHub repo honeypot/trust scoring for AI agents (USDC, MCP over HTTP, x402 v1+v2)
 
 ---
 
