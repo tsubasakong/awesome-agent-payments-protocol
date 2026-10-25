@@ -303,6 +303,8 @@
 - [Coinbase for Agents](https://www.coinbase.com/blog/coinbase-for-agents) — MCP server connecting external agents (ChatGPT, Claude) to a Coinbase account; uses **x402** to pay for premium research APIs and on-demand compute with no login/subscription. Agents run in a ring-fenced sub-portfolio with user-defined capital/asset limits. Launched Jun 11, 2026. ([TechCrunch](https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/))
 - [Ripple XRPL AI Starter Kit](https://ripple.com/insights/xrpl-ai-starter-kit/) — Developer kit for agentic payments on the XRP Ledger via **x402**, settling in XRP and **RLUSD**. First-phase release ships an XRPL Docs MCP server, two Claude skills (wallet + payment ops), and x402 integration; 3–5s settlement with fixed fees. Named a settlement partner in Mastercard AP4M. Launched Jun 10, 2026. ([PYMNTS](https://www.pymnts.com/blockchain/2026/ripple-targets-agentic-payments-market-with-xrpl-starter-kit/))
 - [Glassnode agentic data access](https://research.glassnode.com/agentic-payments-glassnode-data-for-your-ai-agent/) — Pay-per-call access to on-chain metrics via **x402** in USDC — no API keys, subscriptions, or signup; MCP-capable agents discover an endpoint's price, pay, and retrieve data autonomously (Aug 2026)
+- [agent-audit](https://agent-audit.agent-audit.workers.dev/llms.txt) — Read-only x402 seller preflight on Base (eip155:8453): decode 402 challenges, price-vs-catalog checks, `llms.txt` / `/.well-known/x402` / OpenAPI / dead-link scans, plus bulk link health (≤25 URLs) and quote/citation check. Pay per call in USDC via x402 v2 (audit $0.02, links $0.01, quote-check $0.005). Never pays targets. ([OpenAPI](https://agent-audit.agent-audit.workers.dev/openapi.json), [Well-known](https://agent-audit.agent-audit.workers.dev/.well-known/x402), [GitHub](https://github.com/agent-audit-x402))
+- [page-read](https://page-read.agent-audit.workers.dev/llms.txt) — Pay-per-call HTML page fetch + text extract for agents ($0.001 USDC on Base via x402 v2). Read-only; returns title, text, links, and sha256. ([OpenAPI](https://page-read.agent-audit.workers.dev/openapi.json), [Well-known](https://page-read.agent-audit.workers.dev/.well-known/x402))
 
 #### SDKs & Libraries
 
@@ -379,6 +381,7 @@
 
 - [OpenAI Agents SDK — MCP](https://openai.github.io/openai-agents-python/mcp/)
 - [Stripe MCP Server](https://docs.stripe.com/) — Stripe's MCP tools for agentic commerce
+- [x402-tools MCP](https://mcp.agent-audit.workers.dev/mcp) — Remote MCP exposing page-read, quote-check, check-links, and audit_x402_seller over x402 (USDC on Base). Published to the official MCP Registry as `io.github.agent-audit-x402/x402-tools`. ([llms.txt](https://agent-audit.agent-audit.workers.dev/llms.txt), [GitHub](https://github.com/agent-audit-x402))
 
 ---
 
