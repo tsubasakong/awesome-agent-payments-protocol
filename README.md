@@ -750,6 +750,7 @@ Open-sourced by **Ant International** and implemented with **Alipay+** wallet pa
 - [Cloud Security Alliance: Secure Use of AP2](https://cloudsecurityalliance.org/blog/2025/10/06/secure-use-of-the-agent-payments-protocol-ap2-a-framework-for-trustworthy-ai-driven-transactions)
 - [PayPal Dev Blog: AP2 mandates as W3C VCs](https://developer.paypal.com/community/blog/PayPal-Agent-Payments-Protocol/)
 - [IETF charters the Web Bot Auth working group (`webbotauth`)](https://datatracker.ietf.org/wg/webbotauth/about/) — Agent identity via HTTP Message Signatures graduates from individual drafts to a chartered WG under the Web and Internet Transport area, with standards-track and BCP deliverables due to the IESG in 2026. The charter's explicit exclusion of agent-to-agent interfaces and end-user authentication marks the seam between Web Bot Auth and the payment-mandate protocols
+- [Payment MCP census: 49 payment MCP servers checked for spending controls (Oct 2026)](https://github.com/Pink-Agentic-Payments/payment-mcp-census) — Open dataset (CC BY 4.0) scoring which payment MCP servers let an agent move money (37 of 49) and which document a spending budget (4) or a human approval step; method and per-server rows are published, corrections via issues. Disclosure: published by Pink Agentic AI Payments
 
 ---
 
