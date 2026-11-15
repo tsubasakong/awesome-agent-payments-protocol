@@ -199,6 +199,7 @@
 - [Hosted Key Directories for Web Bot Auth](https://datatracker.ietf.org/doc/draft-singh-webbotauth-hosted-directories/) — Delegated key hosting for operators that cannot publish their own directory (Jul 19, 2026)
 - [Web Bot Auth (Cloudflare Developer Docs)](https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/)
 - [ZKProofport](https://zkproofport.app) — Zero-knowledge proof generation for AI agent identity. Lets agents prove Coinbase KYC, Country, Google OIDC, Google Workspace, or Microsoft 365 affiliation via x402-paid TEE proving on Base. ERC-8004 registered, A2A compatible. NPM: `@zkproofport-ai/mcp`. Reference app: [OpenStoa](https://github.com/zkproofport/openstoa) (1st place — The Synthesis Hackathon 2026)
+- [Open Entity Commerce Profile and Agent Commerce Check](https://openentity.org/guides/know-your-agent) - Open standard (CC0) for agent identity at checkout: DID-keyed RFC 9421 signed requests, owner-signed `mandate/1`, `cart/1` and signed `receipt/1`, with a field mapping to AP2 v0.2 and Verifiable Intent and test vectors in four languages. A free hosted check returns allow, step_up or deny with a hash-chained evidence record ([guide](https://openentity.org/guides/commerce-check), [mandates](https://openentity.org/guides/mandates)).
 
 ### Accountability & Evidence Layer
 
