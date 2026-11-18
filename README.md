@@ -295,6 +295,7 @@
 - [QuickNode — Using x402 for Paywalls](https://www.quicknode.com/guides/infrastructure/how-to-use-x402-payment-required)
 - [Crossmint x402 Starter](https://github.com/Crossmint/crossmint-402-starter)
 - [x402 Wallet for Claude Desktop](https://github.com/402md/x402-wallet-for-claude-desktop) — Claude Desktop extension with x402 USDC payments on Stellar and Base. Automatic 402 handling with configurable spending limits.
+- [Crypto News x402 Examples](https://github.com/takashidoyle/crypto-news-x402-examples) - Python, TypeScript and MCP client examples that pay a live x402 news API in USDC on Base or Solana.
 
 #### Live Services
 
