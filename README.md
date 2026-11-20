@@ -295,6 +295,7 @@
 - [QuickNode — Using x402 for Paywalls](https://www.quicknode.com/guides/infrastructure/how-to-use-x402-payment-required)
 - [Crossmint x402 Starter](https://github.com/Crossmint/crossmint-402-starter)
 - [x402 Wallet for Claude Desktop](https://github.com/402md/x402-wallet-for-claude-desktop) — Claude Desktop extension with x402 USDC payments on Stellar and Base. Automatic 402 handling with configurable spending limits.
+- [@three-ws/x402-mcp](https://github.com/nirholas/x402-payments-mcp) - MCP server that lets agents search the x402 bazaar, preview prices and pay Solana USDC endpoints.
 
 #### Live Services
 
