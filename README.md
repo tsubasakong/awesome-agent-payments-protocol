@@ -220,7 +220,7 @@
 
 #### Operational Verification Services
 
-- [SAVER Verifier](https://github.com/SAVER-SI/saver-verifier) — Linked-evidence claim verification via `/v2/verify`; 0.20 USDC on Base via x402 v2.
+- [SAVER Verifier](https://github.com/SAVER-SI/saver-verifier) — Fact-checking API for claim verification before publishing a research report. Get linked evidence via `/v2/verify`; 0.20 USDC on Base via x402 v2.
 
 > **Relationship to ERC-8183:** ERC-8183 solves adjudication *on-chain and in-contract* for agent-to-agent service delivery, with a designated Evaluator and escrowed funds. AEP, LCP and RAILS are protocol-agnostic and operate alongside card rails, stablecoin rails, and conversational checkout alike — evidence and legal context rather than escrow.
 
