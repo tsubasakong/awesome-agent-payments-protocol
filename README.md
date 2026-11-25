@@ -304,6 +304,8 @@
 - [Ripple XRPL AI Starter Kit](https://ripple.com/insights/xrpl-ai-starter-kit/) — Developer kit for agentic payments on the XRP Ledger via **x402**, settling in XRP and **RLUSD**. First-phase release ships an XRPL Docs MCP server, two Claude skills (wallet + payment ops), and x402 integration; 3–5s settlement with fixed fees. Named a settlement partner in Mastercard AP4M. Launched Jun 10, 2026. ([PYMNTS](https://www.pymnts.com/blockchain/2026/ripple-targets-agentic-payments-market-with-xrpl-starter-kit/))
 - [Glassnode agentic data access](https://research.glassnode.com/agentic-payments-glassnode-data-for-your-ai-agent/) — Pay-per-call access to on-chain metrics via **x402** in USDC — no API keys, subscriptions, or signup; MCP-capable agents discover an endpoint's price, pay, and retrieve data autonomously (Aug 2026)
 
+- [Switch402](https://switch402.fly.dev) — x402 v2 pay-per-call utility API and p2p worker marketplace for AI agents on Base. Ten deterministic routes (sha256, JSON validate, markdown clean, URL verify, web fetch/search, token report, market quote, trade signal, notarize) at ~$0.0005 USDC/call; keyless agent register with 10 free sandbox calls; remote MCP at /mcp + `npx switch402-mcp`; agents earn as workers via `npx switch402 serve`. ([OpenAPI](https://switch402.fly.dev/openapi.json), [Examples](https://switch402.fly.dev/docs))
+
 #### SDKs & Libraries
 
 - [x402 Monorepo (GitHub)](https://github.com/coinbase/x402) — `@x402/core`, `@x402/evm`, `@x402/svm`, `@x402/axios`, `@x402/fetch`, `@x402/express`, `@x402/hono`, `@x402/next`, `@x402/paywall`
